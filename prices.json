@@ -1,0 +1,976 @@
+{
+  "updated_at": "2026-07-03T11:11:53.233474+00:00",
+  "count": 194,
+  "prices": [
+    {
+      "symbol": "ACLBSL",
+      "sector": "Microfinance",
+      "ltp": 925.0
+    },
+    {
+      "symbol": "ADBL",
+      "sector": "Commercial Bank",
+      "ltp": 307.0
+    },
+    {
+      "symbol": "AHL",
+      "sector": "Hydropower",
+      "ltp": 437.0
+    },
+    {
+      "symbol": "AHPC",
+      "sector": "Hydropower",
+      "ltp": 264.0
+    },
+    {
+      "symbol": "AKJCL",
+      "sector": "Hydropower",
+      "ltp": 358.0
+    },
+    {
+      "symbol": "AKPL",
+      "sector": "Hydropower",
+      "ltp": 256.1
+    },
+    {
+      "symbol": "ALBSL",
+      "sector": "Microfinance",
+      "ltp": 1098.0
+    },
+    {
+      "symbol": "ALICL",
+      "sector": "Life Insurance",
+      "ltp": 437.1
+    },
+    {
+      "symbol": "ANLB",
+      "sector": "Microfinance",
+      "ltp": 7006.6
+    },
+    {
+      "symbol": "APHL",
+      "sector": "Hydropower",
+      "ltp": 898.0
+    },
+    {
+      "symbol": "AVYAN",
+      "sector": "Microfinance",
+      "ltp": 1067.0
+    },
+    {
+      "symbol": "BANDIPUR",
+      "sector": "Hotel & Tourism",
+      "ltp": 746.0
+    },
+    {
+      "symbol": "BARUN",
+      "sector": "Hydropower",
+      "ltp": 323.5
+    },
+    {
+      "symbol": "BBC",
+      "sector": "Trading",
+      "ltp": 4286.0
+    },
+    {
+      "symbol": "BEDC",
+      "sector": "Hydropower",
+      "ltp": 334.0
+    },
+    {
+      "symbol": "BFC",
+      "sector": "Finance",
+      "ltp": 535.0
+    },
+    {
+      "symbol": "BGWT",
+      "sector": "Hydropower",
+      "ltp": 559.0
+    },
+    {
+      "symbol": "BHCL",
+      "sector": "Hydropower",
+      "ltp": 526.2
+    },
+    {
+      "symbol": "BHDC",
+      "sector": "Hydropower",
+      "ltp": 443.0
+    },
+    {
+      "symbol": "BHL",
+      "sector": "Hydropower",
+      "ltp": 210.0
+    },
+    {
+      "symbol": "BHPL",
+      "sector": "Hydropower",
+      "ltp": 498.0
+    },
+    {
+      "symbol": "BJHL",
+      "sector": "Hydropower",
+      "ltp": 832.0
+    },
+    {
+      "symbol": "BNHC",
+      "sector": "Hydropower",
+      "ltp": 311.0
+    },
+    {
+      "symbol": "BNT",
+      "sector": "Manufacturing & Processing",
+      "ltp": 11600.1
+    },
+    {
+      "symbol": "BPCL",
+      "sector": "Hydropower",
+      "ltp": 665.0
+    },
+    {
+      "symbol": "BUNGAL",
+      "sector": "Hydropower",
+      "ltp": 665.1
+    },
+    {
+      "symbol": "CBBL",
+      "sector": "Microfinance",
+      "ltp": 917.8
+    },
+    {
+      "symbol": "CFCL",
+      "sector": "Finance",
+      "ltp": 620.0
+    },
+    {
+      "symbol": "CGH",
+      "sector": "Hotel & Tourism",
+      "ltp": 772.2
+    },
+    {
+      "symbol": "CHCL",
+      "sector": "Hydropower",
+      "ltp": 482.0
+    },
+    {
+      "symbol": "CHDC",
+      "sector": "Investment",
+      "ltp": 2110.0
+    },
+    {
+      "symbol": "CHL",
+      "sector": "Hydropower",
+      "ltp": 267.0
+    },
+    {
+      "symbol": "CIT",
+      "sector": "Investment",
+      "ltp": 1700.0
+    },
+    {
+      "symbol": "CITY",
+      "sector": "Hotel & Tourism",
+      "ltp": 392.5
+    },
+    {
+      "symbol": "CLI",
+      "sector": "Life Insurance",
+      "ltp": 448.9
+    },
+    {
+      "symbol": "CYCL",
+      "sector": "Microfinance",
+      "ltp": 1430.0
+    },
+    {
+      "symbol": "CZBIL",
+      "sector": "Commercial Bank",
+      "ltp": 199.0
+    },
+    {
+      "symbol": "DDBL",
+      "sector": "Microfinance",
+      "ltp": 830.0
+    },
+    {
+      "symbol": "DHEL",
+      "sector": "Hydropower",
+      "ltp": 594.0
+    },
+    {
+      "symbol": "DHPL",
+      "sector": "Hydropower",
+      "ltp": 286.0
+    },
+    {
+      "symbol": "DLBS",
+      "sector": "Microfinance",
+      "ltp": 1307.0
+    },
+    {
+      "symbol": "DOLTI",
+      "sector": "Hydropower",
+      "ltp": 339.9
+    },
+    {
+      "symbol": "DORDI",
+      "sector": "Hydropower",
+      "ltp": 252.0
+    },
+    {
+      "symbol": "EBL",
+      "sector": "Commercial Bank",
+      "ltp": 700.0
+    },
+    {
+      "symbol": "EDBL",
+      "sector": "Development Bank",
+      "ltp": 569.5
+    },
+    {
+      "symbol": "EHPL",
+      "sector": "Hydropower",
+      "ltp": 369.2
+    },
+    {
+      "symbol": "ENL",
+      "sector": "Investment",
+      "ltp": 838.0
+    },
+    {
+      "symbol": "FMDBL",
+      "sector": "Microfinance",
+      "ltp": 761.0
+    },
+    {
+      "symbol": "FOWAD",
+      "sector": "Microfinance",
+      "ltp": 990.0
+    },
+    {
+      "symbol": "GBBL",
+      "sector": "Development Bank",
+      "ltp": 404.1
+    },
+    {
+      "symbol": "GBIME",
+      "sector": "Commercial Bank",
+      "ltp": 243.0
+    },
+    {
+      "symbol": "GBLBS",
+      "sector": "Microfinance",
+      "ltp": 759.0
+    },
+    {
+      "symbol": "GCIL",
+      "sector": "Manufacturing & Processing",
+      "ltp": 355.0
+    },
+    {
+      "symbol": "GFCL",
+      "sector": "Finance",
+      "ltp": 627.0
+    },
+    {
+      "symbol": "GHL",
+      "sector": "Hydropower",
+      "ltp": 223.0
+    },
+    {
+      "symbol": "GILB",
+      "sector": "Microfinance",
+      "ltp": 1119.0
+    },
+    {
+      "symbol": "GLBSL",
+      "sector": "Microfinance",
+      "ltp": 1803.0
+    },
+    {
+      "symbol": "GLH",
+      "sector": "Hydropower",
+      "ltp": 253.9
+    },
+    {
+      "symbol": "GMFBS",
+      "sector": "Microfinance",
+      "ltp": 1235.0
+    },
+    {
+      "symbol": "GMFIL",
+      "sector": "Finance",
+      "ltp": 468.0
+    },
+    {
+      "symbol": "GMLI",
+      "sector": "Life Insurance",
+      "ltp": 1180.0
+    },
+    {
+      "symbol": "GRDBL",
+      "sector": "Development Bank",
+      "ltp": 1040.0
+    },
+    {
+      "symbol": "GUFL",
+      "sector": "Finance",
+      "ltp": 557.0
+    },
+    {
+      "symbol": "HATHY",
+      "sector": "Investment",
+      "ltp": 701.0
+    },
+    {
+      "symbol": "HBL",
+      "sector": "Commercial Bank",
+      "ltp": 198.3
+    },
+    {
+      "symbol": "HDHPC",
+      "sector": "Hydropower",
+      "ltp": 206.3
+    },
+    {
+      "symbol": "HEI",
+      "sector": "Non-Life Insurance",
+      "ltp": 543.0
+    },
+    {
+      "symbol": "HFIN",
+      "sector": "Hotel & Tourism",
+      "ltp": 727.0
+    },
+    {
+      "symbol": "HIDCL",
+      "sector": "Investment",
+      "ltp": 253.0
+    },
+    {
+      "symbol": "HLBSL",
+      "sector": "Microfinance",
+      "ltp": 869.0
+    },
+    {
+      "symbol": "HLI",
+      "sector": "Life Insurance",
+      "ltp": 324.0
+    },
+    {
+      "symbol": "HPPL",
+      "sector": "Hydropower",
+      "ltp": 362.9
+    },
+    {
+      "symbol": "HRL",
+      "sector": "Others",
+      "ltp": 583.0
+    },
+    {
+      "symbol": "HURJA",
+      "sector": "Hydropower",
+      "ltp": 233.3
+    },
+    {
+      "symbol": "ICFC",
+      "sector": "Finance",
+      "ltp": 615.0
+    },
+    {
+      "symbol": "IGI",
+      "sector": "Non-Life Insurance",
+      "ltp": 430.0
+    },
+    {
+      "symbol": "IHL",
+      "sector": "Hydropower",
+      "ltp": 373.0
+    },
+    {
+      "symbol": "ILBS",
+      "sector": "Microfinance",
+      "ltp": 886.3
+    },
+    {
+      "symbol": "ILI",
+      "sector": "Life Insurance",
+      "ltp": 422.0
+    },
+    {
+      "symbol": "JBBL",
+      "sector": "Development Bank",
+      "ltp": 343.0
+    },
+    {
+      "symbol": "JBLB",
+      "sector": "Microfinance",
+      "ltp": 1245.0
+    },
+    {
+      "symbol": "JFL",
+      "sector": "Finance",
+      "ltp": 398.5
+    },
+    {
+      "symbol": "JHAPA",
+      "sector": "Others",
+      "ltp": 1269.0
+    },
+    {
+      "symbol": "JSLBB",
+      "sector": "Microfinance",
+      "ltp": 1016.0
+    },
+    {
+      "symbol": "KBL",
+      "sector": "Commercial Bank",
+      "ltp": 214.9
+    },
+    {
+      "symbol": "KDL",
+      "sector": "Hotel & Tourism",
+      "ltp": 770.0
+    },
+    {
+      "symbol": "KHPL",
+      "sector": "Hydropower",
+      "ltp": 865.0
+    },
+    {
+      "symbol": "KKHC",
+      "sector": "Hydropower",
+      "ltp": 288.0
+    },
+    {
+      "symbol": "KMCDB",
+      "sector": "Microfinance",
+      "ltp": 815.0
+    },
+    {
+      "symbol": "KPCL",
+      "sector": "Hydropower",
+      "ltp": 472.8
+    },
+    {
+      "symbol": "LBBL",
+      "sector": "Development Bank",
+      "ltp": 482.9
+    },
+    {
+      "symbol": "LEC",
+      "sector": "Hydropower",
+      "ltp": 211.0
+    },
+    {
+      "symbol": "LICN",
+      "sector": "Life Insurance",
+      "ltp": 790.0
+    },
+    {
+      "symbol": "LLBS",
+      "sector": "Microfinance",
+      "ltp": 942.0
+    },
+    {
+      "symbol": "MABEL",
+      "sector": "Hydropower",
+      "ltp": 640.0
+    },
+    {
+      "symbol": "MAKAR",
+      "sector": "Hydropower",
+      "ltp": 479.0
+    },
+    {
+      "symbol": "MANDU",
+      "sector": "Hydropower",
+      "ltp": 811.0
+    },
+    {
+      "symbol": "MATRI",
+      "sector": "Microfinance",
+      "ltp": 888.0
+    },
+    {
+      "symbol": "MBJC",
+      "sector": "Hydropower",
+      "ltp": 275.1
+    },
+    {
+      "symbol": "MCHL",
+      "sector": "Hydropower",
+      "ltp": 296.0
+    },
+    {
+      "symbol": "MDB",
+      "sector": "Development Bank",
+      "ltp": 579.3
+    },
+    {
+      "symbol": "MEHL",
+      "sector": "Hydropower",
+      "ltp": 327.0
+    },
+    {
+      "symbol": "MEL",
+      "sector": "Hydropower",
+      "ltp": 218.0
+    },
+    {
+      "symbol": "MEN",
+      "sector": "Hydropower",
+      "ltp": 574.0
+    },
+    {
+      "symbol": "MERO",
+      "sector": "Microfinance",
+      "ltp": 705.0
+    },
+    {
+      "symbol": "MHCL",
+      "sector": "Hydropower",
+      "ltp": 326.5
+    },
+    {
+      "symbol": "MHL",
+      "sector": "Hydropower",
+      "ltp": 476.8
+    },
+    {
+      "symbol": "MHNL",
+      "sector": "Hydropower",
+      "ltp": 241.0
+    },
+    {
+      "symbol": "MKCL",
+      "sector": "Others",
+      "ltp": 1097.9
+    },
+    {
+      "symbol": "MKHC",
+      "sector": "Hydropower",
+      "ltp": 299.0
+    },
+    {
+      "symbol": "MKHL",
+      "sector": "Hydropower",
+      "ltp": 504.7
+    },
+    {
+      "symbol": "MKJC",
+      "sector": "Hydropower",
+      "ltp": 461.0
+    },
+    {
+      "symbol": "MLBBL",
+      "sector": "Microfinance",
+      "ltp": 1150.0
+    },
+    {
+      "symbol": "MLBL",
+      "sector": "Development Bank",
+      "ltp": 356.0
+    },
+    {
+      "symbol": "MLBS",
+      "sector": "Microfinance",
+      "ltp": 1189.9
+    },
+    {
+      "symbol": "MLBSL",
+      "sector": "Microfinance",
+      "ltp": 1712.0
+    },
+    {
+      "symbol": "MMKJL",
+      "sector": "Hydropower",
+      "ltp": 470.3
+    },
+    {
+      "symbol": "MNBBL",
+      "sector": "Development Bank",
+      "ltp": 366.0
+    },
+    {
+      "symbol": "MPFL",
+      "sector": "Finance",
+      "ltp": 619.0
+    },
+    {
+      "symbol": "MSLB",
+      "sector": "Microfinance",
+      "ltp": 1235.0
+    },
+    {
+      "symbol": "NABBC",
+      "sector": "Development Bank",
+      "ltp": 754.0
+    },
+    {
+      "symbol": "NABIL",
+      "sector": "Commercial Bank",
+      "ltp": 530.0
+    },
+    {
+      "symbol": "NADEP",
+      "sector": "Microfinance",
+      "ltp": 721.3
+    },
+    {
+      "symbol": "NBL",
+      "sector": "Commercial Bank",
+      "ltp": 267.7
+    },
+    {
+      "symbol": "NESDO",
+      "sector": "Microfinance",
+      "ltp": 1525.0
+    },
+    {
+      "symbol": "NFS",
+      "sector": "Finance",
+      "ltp": 670.0
+    },
+    {
+      "symbol": "NGPL",
+      "sector": "Hydropower",
+      "ltp": 412.2
+    },
+    {
+      "symbol": "NHDL",
+      "sector": "Hydropower",
+      "ltp": 637.0
+    },
+    {
+      "symbol": "NHPC",
+      "sector": "Hydropower",
+      "ltp": 261.9
+    },
+    {
+      "symbol": "NICA",
+      "sector": "Commercial Bank",
+      "ltp": 335.1
+    },
+    {
+      "symbol": "NICL",
+      "sector": "Non-Life Insurance",
+      "ltp": 522.8
+    },
+    {
+      "symbol": "NIFRA",
+      "sector": "Investment",
+      "ltp": 249.2
+    },
+    {
+      "symbol": "NIL",
+      "sector": "Non-Life Insurance",
+      "ltp": 624.0
+    },
+    {
+      "symbol": "NIMB",
+      "sector": "Commercial Bank",
+      "ltp": 195.9
+    },
+    {
+      "symbol": "NLG",
+      "sector": "Non-Life Insurance",
+      "ltp": 590.0
+    },
+    {
+      "symbol": "NLIC",
+      "sector": "Life Insurance",
+      "ltp": 744.5
+    },
+    {
+      "symbol": "NLICL",
+      "sector": "Life Insurance",
+      "ltp": 573.0
+    },
+    {
+      "symbol": "NMB",
+      "sector": "Commercial Bank",
+      "ltp": 239.2
+    },
+    {
+      "symbol": "NMBMF",
+      "sector": "Microfinance",
+      "ltp": 617.0
+    },
+    {
+      "symbol": "NMFBS",
+      "sector": "Microfinance",
+      "ltp": 1116.0
+    },
+    {
+      "symbol": "NRIC",
+      "sector": "Non-Life Insurance",
+      "ltp": 940.0
+    },
+    {
+      "symbol": "NRM",
+      "sector": "Others",
+      "ltp": 335.0
+    },
+    {
+      "symbol": "NRN",
+      "sector": "Investment",
+      "ltp": 1433.0
+    },
+    {
+      "symbol": "NUBL",
+      "sector": "Microfinance",
+      "ltp": 626.0
+    },
+    {
+      "symbol": "NWCL",
+      "sector": "Others",
+      "ltp": 727.1
+    },
+    {
+      "symbol": "NYADI",
+      "sector": "Hydropower",
+      "ltp": 378.2
+    },
+    {
+      "symbol": "OHL",
+      "sector": "Hotel & Tourism",
+      "ltp": 680.1
+    },
+    {
+      "symbol": "OMPL",
+      "sector": "Manufacturing & Processing",
+      "ltp": 997.1
+    },
+    {
+      "symbol": "PCBL",
+      "sector": "Commercial Bank",
+      "ltp": 236.0
+    },
+    {
+      "symbol": "PCIL",
+      "sector": "Manufacturing & Processing",
+      "ltp": 654.0
+    },
+    {
+      "symbol": "PFL",
+      "sector": "Finance",
+      "ltp": 360.0
+    },
+    {
+      "symbol": "PHCL",
+      "sector": "Hydropower",
+      "ltp": 298.9
+    },
+    {
+      "symbol": "PMHPL",
+      "sector": "Hydropower",
+      "ltp": 325.9
+    },
+    {
+      "symbol": "PPCL",
+      "sector": "Hydropower",
+      "ltp": 347.8
+    },
+    {
+      "symbol": "PPL",
+      "sector": "Hydropower",
+      "ltp": 335.0
+    },
+    {
+      "symbol": "PRIN",
+      "sector": "Non-Life Insurance",
+      "ltp": 700.0
+    },
+    {
+      "symbol": "PROFL",
+      "sector": "Finance",
+      "ltp": 440.0
+    },
+    {
+      "symbol": "PRVU",
+      "sector": "Commercial Bank",
+      "ltp": 194.4
+    },
+    {
+      "symbol": "PURE",
+      "sector": "Others",
+      "ltp": 826.0
+    },
+    {
+      "symbol": "RADHI",
+      "sector": "Hydropower",
+      "ltp": 720.0
+    },
+    {
+      "symbol": "RAWA",
+      "sector": "Hydropower",
+      "ltp": 444.9
+    },
+    {
+      "symbol": "RFPL",
+      "sector": "Hydropower",
+      "ltp": 343.1
+    },
+    {
+      "symbol": "RHGCL",
+      "sector": "Hydropower",
+      "ltp": 272.0
+    },
+    {
+      "symbol": "RHPL",
+      "sector": "Hydropower",
+      "ltp": 264.0
+    },
+    {
+      "symbol": "RIDI",
+      "sector": "Hydropower",
+      "ltp": 331.0
+    },
+    {
+      "symbol": "RLEL",
+      "sector": "Hydropower",
+      "ltp": 860.0
+    },
+    {
+      "symbol": "RLFL",
+      "sector": "Finance",
+      "ltp": 474.9
+    },
+    {
+      "symbol": "RNLI",
+      "sector": "Life Insurance",
+      "ltp": 452.0
+    },
+    {
+      "symbol": "RSDC",
+      "sector": "Microfinance",
+      "ltp": 658.0
+    },
+    {
+      "symbol": "RSML",
+      "sector": "Manufacturing & Processing",
+      "ltp": 3200.0
+    },
+    {
+      "symbol": "SADBL",
+      "sector": "Development Bank",
+      "ltp": 408.0
+    },
+    {
+      "symbol": "SAIL",
+      "sector": "Manufacturing & Processing",
+      "ltp": 905.3
+    },
+    {
+      "symbol": "SALICO",
+      "sector": "Non-Life Insurance",
+      "ltp": 609.0
+    },
+    {
+      "symbol": "SANIMA",
+      "sector": "Commercial Bank",
+      "ltp": 357.0
+    },
+    {
+      "symbol": "SARBTM",
+      "sector": "Manufacturing & Processing",
+      "ltp": 804.0
+    },
+    {
+      "symbol": "SBI",
+      "sector": "Commercial Bank",
+      "ltp": 393.9
+    },
+    {
+      "symbol": "SBL",
+      "sector": "Commercial Bank",
+      "ltp": 390.1
+    },
+    {
+      "symbol": "SCB",
+      "sector": "Commercial Bank",
+      "ltp": 648.0
+    },
+    {
+      "symbol": "SFCL",
+      "sector": "Finance",
+      "ltp": 376.0
+    },
+    {
+      "symbol": "SGIC",
+      "sector": "Non-Life Insurance",
+      "ltp": 467.9
+    },
+    {
+      "symbol": "SHINE",
+      "sector": "Development Bank",
+      "ltp": 402.0
+    },
+    {
+      "symbol": "SHIVM",
+      "sector": "Manufacturing & Processing",
+      "ltp": 627.1
+    },
+    {
+      "symbol": "SHL",
+      "sector": "Hotel & Tourism",
+      "ltp": 491.2
+    },
+    {
+      "symbol": "SICL",
+      "sector": "Non-Life Insurance",
+      "ltp": 623.0
+    },
+    {
+      "symbol": "SIFC",
+      "sector": "Finance",
+      "ltp": 535.0
+    },
+    {
+      "symbol": "SINDU",
+      "sector": "Development Bank",
+      "ltp": 710.0
+    },
+    {
+      "symbol": "SJLIC",
+      "sector": "Life Insurance",
+      "ltp": 420.5
+    },
+    {
+      "symbol": "SNLI",
+      "sector": "Life Insurance",
+      "ltp": 439.0
+    },
+    {
+      "symbol": "SONA",
+      "sector": "Manufacturing & Processing",
+      "ltp": 423.0
+    },
+    {
+      "symbol": "SPIL",
+      "sector": "Non-Life Insurance",
+      "ltp": 695.0
+    },
+    {
+      "symbol": "SRLI",
+      "sector": "Life Insurance",
+      "ltp": 381.1
+    },
+    {
+      "symbol": "STC",
+      "sector": "Trading",
+      "ltp": 5170.0
+    },
+    {
+      "symbol": "SYPNL",
+      "sector": "Manufacturing & Processing",
+      "ltp": 1359.0
+    },
+    {
+      "symbol": "UNL",
+      "sector": "Manufacturing & Processing",
+      "ltp": 46600.0
+    }
+  ]
+}
