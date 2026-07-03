@@ -8,6 +8,7 @@ Run on schedule: see .github/workflows/update-prices.yml
 """
 
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -17,6 +18,7 @@ from bs4 import BeautifulSoup
 
 URL = "https://www.sharesansar.com/today-share-price"
 OUTPUT_FILE = "prices.json"
+SHARES_FILE = "shares.json"  # produced separately by scrape_shares.py
 
 # Static sector map — sector classification barely changes, so this is
 # maintained by hand. Add new listings here as they IPO.
@@ -161,22 +163,46 @@ def fetch_prices():
     return records
 
 
+def load_shares():
+    if not os.path.exists(SHARES_FILE):
+        return {}
+    try:
+        with open(SHARES_FILE) as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
 def main():
     records = fetch_prices()
     if not records:
         print("No records scraped — site structure may have changed.", file=sys.stderr)
         sys.exit(1)
 
+    shares_map = load_shares()
+    for r in records:
+        extra = shares_map.get(r["symbol"])
+        if extra:
+            r.update(extra)  # promoter_shares, public_shares, promoter_pct,
+                              # public_pct, listed_shares, market_cap (static),
+                              # float_market_cap, eps, pe_ratio, book_value, pbv
+            # Recompute market cap using today's live LTP rather than the
+            # static snapshot from sharehubnepal, if we know listed_shares.
+            if r.get("listed_shares"):
+                r["market_cap"] = round(r["listed_shares"] * r["ltp"], 2)
+
     output = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(records),
         "prices": records,
+        "shares_data_included": bool(shares_map),
     }
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(output, f, indent=2)
 
-    print(f"Wrote {len(records)} records to {OUTPUT_FILE}")
+    print(f"Wrote {len(records)} records to {OUTPUT_FILE} "
+          f"({'with' if shares_map else 'without'} shares/market-cap data)")
 
 
 if __name__ == "__main__":
