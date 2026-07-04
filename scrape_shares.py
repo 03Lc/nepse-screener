@@ -18,7 +18,7 @@ Run manually: python scrape_shares.py
 import json
 import re
 import sys
-import time
+import time as time_module
 
 from playwright.sync_api import sync_playwright
 
@@ -27,6 +27,7 @@ from scrape_prices import SECTOR_MAP  # reuse the same symbol list
 BASE_URL = "https://nepsealpha.com/stocks/{}/info"
 OUTPUT_FILE = "shares.json"
 DELAY_SECONDS = 1.0  # be polite between requests across ~194 pages
+MAX_TOTAL_SECONDS = 20 * 60  # hard stop at 20 min — writes whatever's collected so far
 
 
 def to_number(raw):
@@ -110,12 +111,19 @@ def fetch_ownership(page, symbol):
 def main():
     symbols = sorted(SECTOR_MAP.keys())
     results = {}
+    start_time = time_module.time()
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
 
         for i, symbol in enumerate(symbols, 1):
+            if time_module.time() - start_time > MAX_TOTAL_SECONDS:
+                print(f"\nHit {MAX_TOTAL_SECONDS//60}-min time budget — stopping early "
+                      f"at {i}/{len(symbols)}, saving what was collected so far.",
+                      file=sys.stderr)
+                break
+
             data = fetch_ownership(page, symbol)
             if data:
                 results[symbol] = data
@@ -124,7 +132,7 @@ def main():
                       else f"[{i}/{len(symbols)}] {symbol}: partial data")
             else:
                 print(f"[{i}/{len(symbols)}] {symbol}: skipped")
-            time.sleep(DELAY_SECONDS)
+            time_module.sleep(DELAY_SECONDS)
 
         browser.close()
 
