@@ -183,11 +183,11 @@ def main():
     for r in records:
         extra = shares_map.get(r["symbol"])
         if extra:
-            r.update(extra)  # promoter_shares, public_shares, promoter_pct,
-                              # public_pct, listed_shares, market_cap (static),
-                              # float_market_cap, eps, pe_ratio, book_value, pbv
-            # Recompute market cap using today's live LTP rather than the
-            # static snapshot from sharehubnepal, if we know listed_shares.
+            r.update(extra)  # promoter_pct, promoter_shares, public_pct,
+                              # public_shares, locked_pct, locked_shares,
+                              # listed_shares, market_cap_snapshot, eps, pe_ratio
+            # Recompute market cap using today's live LTP rather than
+            # nepsealpha's snapshot price, if we know listed_shares.
             if r.get("listed_shares"):
                 r["market_cap"] = round(r["listed_shares"] * r["ltp"], 2)
 
