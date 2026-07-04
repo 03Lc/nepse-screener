@@ -1,208 +1,154 @@
 """
-scrape_prices.py
-Scrapes sharesansar.com's Today Share Price table, joins each symbol with a
-static sector map, and writes prices.json for the NEPSE screener to consume.
+scrape_shares.py
+Visits each company's page on nepsealpha.com and pulls the ownership
+breakdown (Promoter / Public / Locked holding) plus market cap.
 
-Run manually:   python scrape_prices.py
-Run on schedule: see .github/workflows/update-prices.yml
+IMPORTANT: nepsealpha.com renders this data with client-side JavaScript —
+a plain `requests.get()` returns an almost-empty page. This script uses
+Playwright (a headless browser) to actually render the page first, the same
+way your own browser does, then reads the real numbers out of it.
+
+This data changes rarely, so this runs weekly, not on the 15-min price
+schedule.
+
+Setup (once): pip install playwright && playwright install --with-deps chromium
+Run manually: python scrape_shares.py
 """
 
 import json
-import os
 import re
 import sys
-from datetime import datetime, timezone
+import time as time_module
 
-import requests
-from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
-URL = "https://www.sharesansar.com/today-share-price"
-OUTPUT_FILE = "prices.json"
-SHARES_FILE = "shares.json"  # produced separately by scrape_shares.py
+from scrape_prices import SECTOR_MAP  # reuse the same symbol list
 
-# Static sector map — sector classification barely changes, so this is
-# maintained by hand. Add new listings here as they IPO.
-SECTOR_MAP = {
-    # Commercial Bank
-    "ADBL": "Commercial Bank", "CZBIL": "Commercial Bank", "EBL": "Commercial Bank",
-    "GBIME": "Commercial Bank", "HBL": "Commercial Bank", "KBL": "Commercial Bank",
-    "NABIL": "Commercial Bank", "NBL": "Commercial Bank", "NICA": "Commercial Bank",
-    "NIMB": "Commercial Bank", "NMB": "Commercial Bank", "PCBL": "Commercial Bank",
-    "PRVU": "Commercial Bank", "SANIMA": "Commercial Bank", "SBI": "Commercial Bank",
-    "SBL": "Commercial Bank", "SCB": "Commercial Bank",
-
-    # Development Bank
-    "EDBL": "Development Bank", "GBBL": "Development Bank", "GRDBL": "Development Bank",
-    "JBBL": "Development Bank", "LBBL": "Development Bank", "MDB": "Development Bank",
-    "MLBL": "Development Bank", "MNBBL": "Development Bank", "NABBC": "Development Bank",
-    "SADBL": "Development Bank", "SHINE": "Development Bank", "SINDU": "Development Bank",
-
-    # Finance
-    "BFC": "Finance", "CFCL": "Finance", "GFCL": "Finance", "GMFIL": "Finance",
-    "GUFL": "Finance", "ICFC": "Finance", "JFL": "Finance", "MPFL": "Finance",
-    "NFS": "Finance", "PFL": "Finance", "PROFL": "Finance", "RLFL": "Finance",
-    "SFCL": "Finance", "SIFC": "Finance",
-
-    # Microfinance
-    "ACLBSL": "Microfinance", "ALBSL": "Microfinance", "ANLB": "Microfinance",
-    "AVYAN": "Microfinance", "CBBL": "Microfinance", "CYCL": "Microfinance",
-    "DDBL": "Microfinance", "DLBS": "Microfinance", "FMDBL": "Microfinance",
-    "FOWAD": "Microfinance", "GBLBS": "Microfinance", "GILB": "Microfinance",
-    "GLBSL": "Microfinance", "GMFBS": "Microfinance", "HLBSL": "Microfinance",
-    "ILBS": "Microfinance", "JBLB": "Microfinance", "JSLBB": "Microfinance",
-    "KMCDB": "Microfinance", "LLBS": "Microfinance", "MATRI": "Microfinance",
-    "MERO": "Microfinance", "MLBBL": "Microfinance", "MLBS": "Microfinance",
-    "MLBSL": "Microfinance", "MSLB": "Microfinance", "NADEP": "Microfinance",
-    "NESDO": "Microfinance", "NMBMF": "Microfinance", "NMFBS": "Microfinance",
-    "NUBL": "Microfinance", "RSDC": "Microfinance",
-
-    # Life Insurance
-    "ALICL": "Life Insurance", "CLI": "Life Insurance", "GMLI": "Life Insurance",
-    "HLI": "Life Insurance", "ILI": "Life Insurance", "LICN": "Life Insurance",
-    "NLIC": "Life Insurance", "NLICL": "Life Insurance", "RNLI": "Life Insurance",
-    "SJLIC": "Life Insurance", "SNLI": "Life Insurance", "SRLI": "Life Insurance",
-
-    # Non-Life Insurance
-    "HEI": "Non-Life Insurance", "IGI": "Non-Life Insurance", "NICL": "Non-Life Insurance",
-    "NIL": "Non-Life Insurance", "NLG": "Non-Life Insurance", "NRIC": "Non-Life Insurance",
-    "PRIN": "Non-Life Insurance", "SALICO": "Non-Life Insurance", "SGIC": "Non-Life Insurance",
-    "SICL": "Non-Life Insurance", "SPIL": "Non-Life Insurance",
-
-    # Hydropower
-    "AHL": "Hydropower", "AHPC": "Hydropower", "AKJCL": "Hydropower", "AKPL": "Hydropower",
-    "APHL": "Hydropower", "BARUN": "Hydropower", "BEDC": "Hydropower", "BGWT": "Hydropower",
-    "BHCL": "Hydropower", "BHDC": "Hydropower", "BHL": "Hydropower", "BHPL": "Hydropower",
-    "BJHL": "Hydropower", "BNHC": "Hydropower", "BPCL": "Hydropower", "BUNGAL": "Hydropower",
-    "CHCL": "Hydropower", "CHL": "Hydropower", "DHEL": "Hydropower", "DHPL": "Hydropower",
-    "DOLTI": "Hydropower", "DORDI": "Hydropower", "EHPL": "Hydropower", "GHL": "Hydropower",
-    "GLH": "Hydropower", "HDHPC": "Hydropower", "HPPL": "Hydropower", "HURJA": "Hydropower",
-    "IHL": "Hydropower", "KHPL": "Hydropower", "KKHC": "Hydropower", "KPCL": "Hydropower",
-    "LEC": "Hydropower", "MABEL": "Hydropower", "MAKAR": "Hydropower", "MANDU": "Hydropower",
-    "MBJC": "Hydropower", "MCHL": "Hydropower", "MEHL": "Hydropower", "MEL": "Hydropower",
-    "MEN": "Hydropower", "MHCL": "Hydropower", "MHL": "Hydropower", "MHNL": "Hydropower",
-    "MKHC": "Hydropower", "MKHL": "Hydropower", "MKJC": "Hydropower", "MMKJL": "Hydropower",
-    "NGPL": "Hydropower", "NHDL": "Hydropower", "NHPC": "Hydropower", "NYADI": "Hydropower",
-    "PHCL": "Hydropower", "PMHPL": "Hydropower", "PPCL": "Hydropower", "PPL": "Hydropower",
-    "RADHI": "Hydropower", "RAWA": "Hydropower", "RFPL": "Hydropower", "RHGCL": "Hydropower",
-    "RHPL": "Hydropower", "RIDI": "Hydropower", "RLEL": "Hydropower",
-
-    # Hotel & Tourism
-    "BANDIPUR": "Hotel & Tourism", "CGH": "Hotel & Tourism", "CITY": "Hotel & Tourism",
-    "HFIN": "Hotel & Tourism", "KDL": "Hotel & Tourism", "OHL": "Hotel & Tourism",
-    "SHL": "Hotel & Tourism",
-
-    # Manufacturing & Processing
-    "BNL": "Manufacturing & Processing", "GCIL": "Manufacturing & Processing",
-    "OMPL": "Manufacturing & Processing", "PCIL": "Manufacturing & Processing",
-    "RSML": "Manufacturing & Processing", "SHIVM": "Manufacturing & Processing",
-    "SARBTM": "Manufacturing & Processing", "SAIL": "Manufacturing & Processing",
-    "SONA": "Manufacturing & Processing", "SYPNL": "Manufacturing & Processing",
-    "UNL": "Manufacturing & Processing", "BNT": "Manufacturing & Processing",
-
-    # Investment
-    "CHDC": "Investment", "CIT": "Investment", "ENL": "Investment", "HATHY": "Investment",
-    "HIDCL": "Investment", "NIFRA": "Investment", "NRN": "Investment",
-
-    # Others
-    "HRL": "Others", "JHAPA": "Others", "MKCL": "Others", "NRM": "Others",
-    "NWCL": "Others", "PURE": "Others",
-
-    # Trading
-    "BBC": "Trading", "STC": "Trading",
-}
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-}
+BASE_URL = "https://nepsealpha.com/stocks/{}/info"
+OUTPUT_FILE = "shares.json"
+DELAY_SECONDS = 1.0  # be polite between requests across ~194 pages
+MAX_TOTAL_SECONDS = 20 * 60  # hard stop at 20 min — writes whatever's collected so far
 
 
-def fetch_prices():
-    resp = requests.get(URL, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-
-    # Find the table that actually has "Symbol" and "LTP" headers rather than
-    # guessing an id/class, since markup can change.
-    table = None
-    for t in soup.find_all("table"):
-        header_text = t.get_text(" ", strip=True).lower()
-        if "symbol" in header_text and "ltp" in header_text:
-            table = t
-            break
-    if table is None:
-        print("Could not find price table on page", file=sys.stderr)
-        sys.exit(1)
-
-    header_row = table.find("tr")
-    headers = [th.get_text(strip=True).lower() for th in header_row.find_all(["th", "td"])]
+def to_number(raw):
+    raw = raw.replace(",", "").strip()
     try:
-        symbol_idx = next(i for i, h in enumerate(headers) if "symbol" in h)
-        ltp_idx = next(i for i, h in enumerate(headers) if h == "ltp" or "ltp" in h)
-    except StopIteration:
-        print("Could not locate Symbol/LTP columns in header row", file=sys.stderr)
-        sys.exit(1)
-
-    records = []
-    for tr in table.find_all("tr")[1:]:
-        cells = [td.get_text(strip=True) for td in tr.find_all("td")]
-        if len(cells) <= max(symbol_idx, ltp_idx):
-            continue
-        symbol = cells[symbol_idx].upper().strip()
-        ltp_raw = cells[ltp_idx].replace(",", "")
-        if not re.match(r"^-?\d+(\.\d+)?$", ltp_raw):
-            continue
-        ltp = float(ltp_raw)
-
-        sector = SECTOR_MAP.get(symbol)
-        if sector is None:
-            continue  # skip debentures, bonds, mutual funds, unmapped symbols
-
-        records.append({"symbol": symbol, "sector": sector, "ltp": ltp})
-
-    return records
+        return float(raw)
+    except ValueError:
+        return None
 
 
-def load_shares():
-    if not os.path.exists(SHARES_FILE):
-        return {}
+def parse_holding(text, label):
+    """Matches e.g. 'Promoter Holding 51.00% / 79,100,011.89 Nos'."""
+    m = re.search(
+        rf"{label}\s*([\d.]+)\s*%\s*/\s*([\d,]+\.?\d*)\s*Nos",
+        text,
+        re.IGNORECASE,
+    )
+    if not m:
+        return None, None
+    return to_number(m.group(1)), to_number(m.group(2))
+
+
+def fetch_ownership(page, symbol):
+    url = BASE_URL.format(symbol)
     try:
-        with open(SHARES_FILE) as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return {}
+        # domcontentloaded is fast and reliable; networkidle hangs on sites
+        # with continuous background polling (ads, live-price tickers, etc.)
+        page.goto(url, wait_until="domcontentloaded", timeout=20000)
+        try:
+            # Wait specifically for the content we need rather than the
+            # whole network going quiet — much faster and more reliable.
+            page.wait_for_selector("text=Promoter Holding", timeout=12000)
+        except Exception:
+            pass  # fall through and read whatever did render
+        text = page.inner_text("body")
+    except Exception as e:
+        print(f"  {symbol}: page load failed ({e})", file=sys.stderr)
+        return None
+
+    result = {}
+
+    promoter_pct, promoter_nos = parse_holding(text, "Promoter Holding")
+    if promoter_pct is not None:
+        result["promoter_pct"] = promoter_pct
+        result["promoter_shares"] = promoter_nos
+
+    public_pct, public_nos = parse_holding(text, "Public Holding")
+    if public_pct is not None:
+        result["public_pct"] = public_pct
+        result["public_shares"] = public_nos
+
+    locked_pct, locked_nos = parse_holding(text, "Locked Holding")
+    if locked_pct is not None:
+        result["locked_pct"] = locked_pct
+        result["locked_shares"] = locked_nos
+
+    if promoter_nos is not None or public_nos is not None or locked_nos is not None:
+        result["listed_shares"] = round(
+            (promoter_nos or 0) + (public_nos or 0) + (locked_nos or 0), 2
+        )
+
+    m = re.search(r"Market\s*Cap(?:italization)?[:\s]*(?:Rs\.?)?\s*([\d,]+\.?\d*)", text, re.IGNORECASE)
+    if m:
+        result["market_cap_snapshot"] = to_number(m.group(1))
+
+    m = re.search(r"\bEPS\b[:\s]*(-?[\d.]+)", text)
+    if m:
+        result["eps"] = to_number(m.group(1))
+
+    m = re.search(r"P\s*/\s*E\s*(?:Ratio)?[:\s]*(-?[\d.]+)", text, re.IGNORECASE)
+    if m:
+        result["pe_ratio"] = to_number(m.group(1))
+
+    if not result:
+        print(f"  {symbol}: no ownership/fundamental data found on page", file=sys.stderr)
+        return None
+
+    return result
 
 
 def main():
-    records = fetch_prices()
-    if not records:
-        print("No records scraped — site structure may have changed.", file=sys.stderr)
-        sys.exit(1)
+    symbols = sorted(SECTOR_MAP.keys())
+    results = {}
+    start_time = time_module.time()
 
-    shares_map = load_shares()
-    for r in records:
-        extra = shares_map.get(r["symbol"])
-        if extra:
-            r.update(extra)  # promoter_pct, promoter_shares, public_pct,
-                              # public_shares, locked_pct, locked_shares,
-                              # listed_shares, market_cap_snapshot, eps, pe_ratio
-            # Recompute market cap using today's live LTP rather than
-            # nepsealpha's snapshot price, if we know listed_shares.
-            if r.get("listed_shares"):
-                r["market_cap"] = round(r["listed_shares"] * r["ltp"], 2)
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        # A realistic context (real UA + viewport) reduces the chance a site
+        # detects this as a headless bot and serves a stripped-down page.
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            viewport={"width": 1366, "height": 900},
+        )
+        page = context.new_page()
 
-    output = {
-        "updated_at": datetime.now(timezone.utc).isoformat(),
-        "count": len(records),
-        "prices": records,
-        "shares_data_included": bool(shares_map),
-    }
+        try:
+            for i, symbol in enumerate(symbols, 1):
+                if time_module.time() - start_time > MAX_TOTAL_SECONDS:
+                    print(f"\nHit {MAX_TOTAL_SECONDS//60}-min time budget — stopping early "
+                          f"at {i}/{len(symbols)}, saving what was collected so far.",
+                          file=sys.stderr)
+                    break
 
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(output, f, indent=2)
+                data = fetch_ownership(page, symbol)
+                if data:
+                    results[symbol] = data
+                    pct = data.get("promoter_pct")
+                    print(f"[{i}/{len(symbols)}] {symbol}: promoter {pct}%" if pct is not None
+                          else f"[{i}/{len(symbols)}] {symbol}: partial data")
+                else:
+                    print(f"[{i}/{len(symbols)}] {symbol}: skipped")
+                time_module.sleep(DELAY_SECONDS)
+        finally:
+            # Always save whatever was collected, even if something above
+            # crashes unexpectedly — partial data beats losing everything.
+            browser.close()
+            with open(OUTPUT_FILE, "w") as f:
+                json.dump(results, f, indent=2)
 
-    print(f"Wrote {len(records)} records to {OUTPUT_FILE} "
-          f"({'with' if shares_map else 'without'} shares/market-cap data)")
+    print(f"\nWrote {len(results)}/{len(symbols)} records to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
