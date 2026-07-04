@@ -115,29 +115,38 @@ def main():
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        page = browser.new_page()
+        # A realistic context (real UA + viewport) reduces the chance a site
+        # detects this as a headless bot and serves a stripped-down page.
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            viewport={"width": 1366, "height": 900},
+        )
+        page = context.new_page()
 
-        for i, symbol in enumerate(symbols, 1):
-            if time_module.time() - start_time > MAX_TOTAL_SECONDS:
-                print(f"\nHit {MAX_TOTAL_SECONDS//60}-min time budget — stopping early "
-                      f"at {i}/{len(symbols)}, saving what was collected so far.",
-                      file=sys.stderr)
-                break
+        try:
+            for i, symbol in enumerate(symbols, 1):
+                if time_module.time() - start_time > MAX_TOTAL_SECONDS:
+                    print(f"\nHit {MAX_TOTAL_SECONDS//60}-min time budget — stopping early "
+                          f"at {i}/{len(symbols)}, saving what was collected so far.",
+                          file=sys.stderr)
+                    break
 
-            data = fetch_ownership(page, symbol)
-            if data:
-                results[symbol] = data
-                pct = data.get("promoter_pct")
-                print(f"[{i}/{len(symbols)}] {symbol}: promoter {pct}%" if pct is not None
-                      else f"[{i}/{len(symbols)}] {symbol}: partial data")
-            else:
-                print(f"[{i}/{len(symbols)}] {symbol}: skipped")
-            time_module.sleep(DELAY_SECONDS)
-
-        browser.close()
-
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(results, f, indent=2)
+                data = fetch_ownership(page, symbol)
+                if data:
+                    results[symbol] = data
+                    pct = data.get("promoter_pct")
+                    print(f"[{i}/{len(symbols)}] {symbol}: promoter {pct}%" if pct is not None
+                          else f"[{i}/{len(symbols)}] {symbol}: partial data")
+                else:
+                    print(f"[{i}/{len(symbols)}] {symbol}: skipped")
+                time_module.sleep(DELAY_SECONDS)
+        finally:
+            # Always save whatever was collected, even if something above
+            # crashes unexpectedly — partial data beats losing everything.
+            browser.close()
+            with open(OUTPUT_FILE, "w") as f:
+                json.dump(results, f, indent=2)
 
     print(f"\nWrote {len(results)}/{len(symbols)} records to {OUTPUT_FILE}")
 
