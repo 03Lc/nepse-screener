@@ -1,0 +1,38 @@
+name: Update listed shares data
+
+on:
+  schedule:
+    # Weekly — this data changes rarely (bonus/rights issues only)
+    - cron: "0 3 * * 0"   # Sunday 03:00 UTC (~08:45 NPT)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-shares:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install --with-deps chromium
+
+      - name: Run shares scraper
+        run: python scrape_shares.py
+        # Takes several minutes — ~194 pages, each rendered in a headless
+        # browser, ~1s apart to stay polite. Don't cancel early.
+
+      - name: Commit updated shares.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add shares.json
+          git diff --quiet --cached || git commit -m "Update listed shares $(date -u +'%Y-%m-%d')"
+          git push
