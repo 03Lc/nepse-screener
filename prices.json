@@ -1,976 +1,2335 @@
 {
-  "updated_at": "2026-07-03T11:11:53.233474+00:00",
+  "updated_at": "2026-07-04T06:58:07.592538+00:00",
   "count": 194,
   "prices": [
     {
       "symbol": "ACLBSL",
       "sector": "Microfinance",
-      "ltp": 925.0
+      "ltp": 925.0,
+      "listed_shares": 3671435.0,
+      "market_cap": 3396077375.0,
+      "float_market_cap": 1358430950.0,
+      "eps": 34.02,
+      "pe_ratio": 27.19,
+      "book_value": 179.21,
+      "pbv": 5.16
     },
     {
       "symbol": "ADBL",
       "sector": "Commercial Bank",
-      "ltp": 307.0
+      "ltp": 307.0,
+      "listed_shares": 143055192.0,
+      "market_cap": 43917943944.0,
+      "float_market_cap": 21519792508.0,
+      "eps": 9.95,
+      "pe_ratio": 30.85,
+      "book_value": 230.49,
+      "pbv": 1.33
     },
     {
       "symbol": "AHL",
       "sector": "Hydropower",
-      "ltp": 437.0
+      "ltp": 437.0,
+      "listed_shares": 3400000.0,
+      "market_cap": 1485800000.0,
+      "float_market_cap": 1485800000.0,
+      "eps": -19.31,
+      "pe_ratio": -22.63,
+      "book_value": 71.36,
+      "pbv": 6.12
     },
     {
       "symbol": "AHPC",
       "sector": "Hydropower",
-      "ltp": 264.0
+      "ltp": 264.0,
+      "listed_shares": 40404032.0,
+      "market_cap": 10666664448.0,
+      "float_market_cap": 10666664448.0,
+      "eps": 4.41,
+      "pe_ratio": 59.86,
+      "book_value": 110.71,
+      "pbv": 2.38
     },
     {
       "symbol": "AKJCL",
       "sector": "Hydropower",
-      "ltp": 358.0
+      "ltp": 358.0,
+      "listed_shares": 20000000.0,
+      "market_cap": 7160000000.0,
+      "float_market_cap": 7160000000.0,
+      "eps": 2.56,
+      "pe_ratio": 139.84,
+      "book_value": 92.42,
+      "pbv": 3.87
     },
     {
       "symbol": "AKPL",
       "sector": "Hydropower",
-      "ltp": 256.1
+      "ltp": 256.1,
+      "listed_shares": 38959421.0,
+      "market_cap": 9977507718.1,
+      "float_market_cap": 9977507718.0,
+      "eps": 4.92,
+      "pe_ratio": 52.05,
+      "book_value": 103.42,
+      "pbv": 2.48
     },
     {
       "symbol": "ALBSL",
       "sector": "Microfinance",
-      "ltp": 1098.0
+      "ltp": 1098.0,
+      "listed_shares": 8026857.0,
+      "market_cap": 8813488986.0,
+      "float_market_cap": 2820316212.0,
+      "eps": 29.28,
+      "pe_ratio": 37.5,
+      "book_value": 163.92,
+      "pbv": 6.7
     },
     {
       "symbol": "ALICL",
       "sector": "Life Insurance",
-      "ltp": 437.1
+      "ltp": 437.1,
+      "listed_shares": 52512173.0,
+      "market_cap": 22953070818.3,
+      "float_market_cap": 9181228239.0,
+      "eps": 9.26,
+      "pe_ratio": 47.2,
+      "book_value": 125.01,
+      "pbv": 3.5
     },
     {
       "symbol": "ANLB",
       "sector": "Microfinance",
-      "ltp": 7006.6
+      "ltp": 7006.6,
+      "listed_shares": 895072.0,
+      "market_cap": 6271411475.2,
+      "float_market_cap": 2046354602.0,
+      "eps": 82.49,
+      "pe_ratio": 84.94,
+      "book_value": 423.26,
+      "pbv": 16.55
     },
     {
       "symbol": "APHL",
       "sector": "Hydropower",
-      "ltp": 898.0
+      "ltp": 898.0,
+      "listed_shares": 4700000.0,
+      "market_cap": 4220600000.0,
+      "float_market_cap": 1266180000.0,
+      "eps": 0.0,
+      "pe_ratio": 0.0,
+      "book_value": 100.0,
+      "pbv": 8.98
     },
     {
       "symbol": "AVYAN",
       "sector": "Microfinance",
-      "ltp": 1067.0
+      "ltp": 1067.0,
+      "listed_shares": 2500000.0,
+      "market_cap": 2667500000.0,
+      "float_market_cap": 1040325000.0,
+      "eps": 52.53,
+      "pe_ratio": 20.31,
+      "book_value": 157.84,
+      "pbv": 6.76
     },
     {
       "symbol": "BANDIPUR",
       "sector": "Hotel & Tourism",
-      "ltp": 746.0
+      "ltp": 746.0,
+      "listed_shares": 28300000.0,
+      "market_cap": 21111800000.0,
+      "float_market_cap": 4372253780.0,
+      "eps": 0.38,
+      "pe_ratio": 1963.16,
+      "book_value": 95.24,
+      "pbv": 7.83
     },
     {
       "symbol": "BARUN",
       "sector": "Hydropower",
-      "ltp": 323.5
+      "ltp": 323.5,
+      "listed_shares": 11225325.0,
+      "market_cap": 3631392637.5,
+      "float_market_cap": 3631392637.0,
+      "eps": 2.01,
+      "pe_ratio": 160.95,
+      "book_value": 107.72,
+      "pbv": 3.0
     },
     {
       "symbol": "BBC",
       "sector": "Trading",
-      "ltp": 4286.0
+      "ltp": 4286.0,
+      "listed_shares": 40100000.0,
+      "market_cap": 171868600000.0,
+      "float_market_cap": 146535168360.0,
+      "eps": 0.0,
+      "pe_ratio": 0.0,
+      "book_value": 100.0,
+      "pbv": 42.86
     },
     {
       "symbol": "BEDC",
       "sector": "Hydropower",
-      "ltp": 334.0
+      "ltp": 334.0,
+      "listed_shares": 5440534.0,
+      "market_cap": 1817138356.0,
+      "float_market_cap": 1817138356.0,
+      "eps": -0.12,
+      "pe_ratio": -2783.33,
+      "book_value": 47.88,
+      "pbv": 6.98
     },
     {
       "symbol": "BFC",
       "sector": "Finance",
-      "ltp": 535.0
+      "ltp": 535.0,
+      "listed_shares": 8904242.0,
+      "market_cap": 4763769470.0,
+      "float_market_cap": 2314238800.0,
+      "eps": 8.8,
+      "pe_ratio": 60.8,
+      "book_value": 112.72,
+      "pbv": 4.75
     },
     {
       "symbol": "BGWT",
       "sector": "Hydropower",
-      "ltp": 559.0
+      "ltp": 559.0,
+      "listed_shares": 6782399.0,
+      "market_cap": 3791361041.0,
+      "float_market_cap": 568703681.0,
+      "eps": 11.16,
+      "pe_ratio": 50.09,
+      "book_value": 112.67,
+      "pbv": 4.96
     },
     {
       "symbol": "BHCL",
       "sector": "Hydropower",
-      "ltp": 526.2
+      "ltp": 526.2,
+      "listed_shares": 9091013.0,
+      "market_cap": 4783691040.6,
+      "float_market_cap": 1865639469.0,
+      "eps": 1.55,
+      "pe_ratio": 339.48,
+      "book_value": 97.43,
+      "pbv": 5.4
     },
     {
       "symbol": "BHDC",
       "sector": "Hydropower",
-      "ltp": 443.0
+      "ltp": 443.0,
+      "listed_shares": 11862900.0,
+      "market_cap": 5255264700.0,
+      "float_market_cap": 5255264700.0,
+      "eps": 13.22,
+      "pe_ratio": 33.51,
+      "book_value": 117.43,
+      "pbv": 3.77
     },
     {
       "symbol": "BHL",
       "sector": "Hydropower",
-      "ltp": 210.0
+      "ltp": 210.0,
+      "listed_shares": 36559400.0,
+      "market_cap": 7677474000.0,
+      "float_market_cap": 7677474000.0,
+      "eps": 8.59,
+      "pe_ratio": 24.45,
+      "book_value": 79.95,
+      "pbv": 2.63
     },
     {
       "symbol": "BHPL",
       "sector": "Hydropower",
-      "ltp": 498.0
+      "ltp": 498.0,
+      "listed_shares": 2500000.0,
+      "market_cap": 1245000000.0,
+      "float_market_cap": 1245000000.0,
+      "eps": -0.59,
+      "pe_ratio": -844.07,
+      "book_value": 50.03,
+      "pbv": 9.95
     },
     {
       "symbol": "BJHL",
       "sector": "Hydropower",
-      "ltp": 832.0
+      "ltp": 832.0,
+      "listed_shares": 10000000.0,
+      "market_cap": 8320000000.0,
+      "float_market_cap": 1664000000.0,
+      "eps": -3.26,
+      "pe_ratio": -255.21,
+      "book_value": 88.82,
+      "pbv": 9.37
     },
     {
       "symbol": "BNHC",
       "sector": "Hydropower",
-      "ltp": 311.0
+      "ltp": 311.0,
+      "listed_shares": 8000000.0,
+      "market_cap": 2488000000.0,
+      "float_market_cap": 2488000000.0,
+      "eps": 7.78,
+      "pe_ratio": 39.97,
+      "book_value": 84.3,
+      "pbv": 3.69
     },
     {
       "symbol": "BNT",
       "sector": "Manufacturing & Processing",
-      "ltp": 11600.1
+      "ltp": 11600.1,
+      "listed_shares": 1210000.0,
+      "market_cap": 14036121000.0,
+      "float_market_cap": 3509030250.0,
+      "eps": 305.29,
+      "pe_ratio": 38.0,
+      "book_value": 3.0,
+      "pbv": 3.7
     },
     {
       "symbol": "BPCL",
       "sector": "Hydropower",
-      "ltp": 665.0
+      "ltp": 665.0,
+      "listed_shares": 34090646.0,
+      "market_cap": 22670279590.0,
+      "float_market_cap": 22670279590.0,
+      "eps": 11.71,
+      "pe_ratio": 56.79,
+      "book_value": 210.33,
+      "pbv": 3.16
     },
     {
       "symbol": "BUNGAL",
       "sector": "Hydropower",
-      "ltp": 665.1
+      "ltp": 665.1,
+      "listed_shares": 8300000.0,
+      "market_cap": 5520330000.0,
+      "float_market_cap": 1932115500.0,
+      "eps": -0.79,
+      "pe_ratio": -841.9,
+      "book_value": 84.68,
+      "pbv": 7.85
     },
     {
       "symbol": "CBBL",
       "sector": "Microfinance",
-      "ltp": 917.8
+      "ltp": 917.8,
+      "listed_shares": 36172643.0,
+      "market_cap": 33199251745.4,
+      "float_market_cap": 16267633291.0,
+      "eps": 33.41,
+      "pe_ratio": 27.47,
+      "book_value": 241.93,
+      "pbv": 3.79
     },
     {
       "symbol": "CFCL",
       "sector": "Finance",
-      "ltp": 620.0
+      "ltp": 620.0,
+      "listed_shares": 9488756.0,
+      "market_cap": 5883028720.0,
+      "float_market_cap": 2706192740.0,
+      "eps": 5.19,
+      "pe_ratio": 119.46,
+      "book_value": 114.62,
+      "pbv": 5.41
     },
     {
       "symbol": "CGH",
       "sector": "Hotel & Tourism",
-      "ltp": 772.2
+      "ltp": 772.2,
+      "listed_shares": 16107956.0,
+      "market_cap": 12438563623.2,
+      "float_market_cap": 12438563623.0,
+      "eps": -0.78,
+      "pe_ratio": -990.0,
+      "book_value": 100.2,
+      "pbv": 7.71
     },
     {
       "symbol": "CHCL",
       "sector": "Hydropower",
-      "ltp": 482.0
+      "ltp": 482.0,
+      "listed_shares": 94849892.0,
+      "market_cap": 45717647944.0,
+      "float_market_cap": 45717647944.0,
+      "eps": 6.49,
+      "pe_ratio": 74.27,
+      "book_value": 121.0,
+      "pbv": 3.98
     },
     {
       "symbol": "CHDC",
       "sector": "Investment",
-      "ltp": 2110.0
+      "ltp": 2110.0,
+      "listed_shares": 10342371.0,
+      "market_cap": 21822402810.0,
+      "float_market_cap": 21822402810.0,
+      "eps": 61.05,
+      "pe_ratio": 34.56,
+      "book_value": 257.36,
+      "pbv": 8.2
     },
     {
       "symbol": "CHL",
       "sector": "Hydropower",
-      "ltp": 267.0
+      "ltp": 267.0,
+      "listed_shares": 7739550.0,
+      "market_cap": 2066459850.0,
+      "float_market_cap": 2066459850.0,
+      "eps": 3.25,
+      "pe_ratio": 82.15,
+      "book_value": 85.09,
+      "pbv": 3.14
     },
     {
       "symbol": "CIT",
       "sector": "Investment",
-      "ltp": 1700.0
+      "ltp": 1700.0,
+      "listed_shares": 68057981.0,
+      "market_cap": 115698567700.0,
+      "float_market_cap": 23139713200.0,
+      "eps": 19.32,
+      "pe_ratio": 87.99,
+      "book_value": 147.11,
+      "pbv": 11.56
     },
     {
       "symbol": "CITY",
       "sector": "Hotel & Tourism",
-      "ltp": 392.5
+      "ltp": 392.5,
+      "listed_shares": 30132000.0,
+      "market_cap": 11826810000.0,
+      "float_market_cap": 11826810000.0,
+      "eps": -6.14,
+      "pe_ratio": -63.93,
+      "book_value": 97.28,
+      "pbv": 4.03
     },
     {
       "symbol": "CLI",
       "sector": "Life Insurance",
-      "ltp": 448.9
+      "ltp": 448.9,
+      "listed_shares": 50000000.0,
+      "market_cap": 22445000000.0,
+      "float_market_cap": 6733500000.0,
+      "eps": 9.26,
+      "pe_ratio": 48.48,
+      "book_value": 126.52,
+      "pbv": 3.55
     },
     {
       "symbol": "CYCL",
       "sector": "Microfinance",
-      "ltp": 1430.0
+      "ltp": 1430.0,
+      "listed_shares": 2664244.0,
+      "market_cap": 3809868920.0,
+      "float_market_cap": 1219157940.0,
+      "eps": 26.74,
+      "pe_ratio": 53.48,
+      "book_value": 269.54,
+      "pbv": 5.31
     },
     {
       "symbol": "CZBIL",
       "sector": "Commercial Bank",
-      "ltp": 199.0
+      "ltp": 199.0,
+      "listed_shares": 155074638.0,
+      "market_cap": 30859852962.0,
+      "float_market_cap": 15121327828.0,
+      "eps": 11.23,
+      "pe_ratio": 17.72,
+      "book_value": 155.99,
+      "pbv": 1.28
     },
     {
       "symbol": "DDBL",
       "sector": "Microfinance",
-      "ltp": 830.0
+      "ltp": 830.0,
+      "listed_shares": 20551146.0,
+      "market_cap": 17057451180.0,
+      "float_market_cap": 8358150630.0,
+      "eps": 44.13,
+      "pe_ratio": 18.81,
+      "book_value": 212.26,
+      "pbv": 3.91
     },
     {
       "symbol": "DHEL",
       "sector": "Hydropower",
-      "ltp": 594.0
+      "ltp": 594.0,
+      "listed_shares": 10305000.0,
+      "market_cap": 6121170000.0,
+      "float_market_cap": 2346244164.0,
+      "eps": -4.33,
+      "pe_ratio": -137.18,
+      "book_value": 128.02,
+      "pbv": 4.64
     },
     {
       "symbol": "DHPL",
       "sector": "Hydropower",
-      "ltp": 286.0
+      "ltp": 286.0,
+      "listed_shares": 2640000.0,
+      "market_cap": 755040000.0,
+      "float_market_cap": 755040000.0,
+      "eps": 2.92,
+      "pe_ratio": 97.95,
+      "book_value": 5.06,
+      "pbv": 56.52
     },
     {
       "symbol": "DLBS",
       "sector": "Microfinance",
-      "ltp": 1307.0
+      "ltp": 1307.0,
+      "listed_shares": 1331000.0,
+      "market_cap": 1739617000.0,
+      "float_market_cap": 556677440.0,
+      "eps": 18.29,
+      "pe_ratio": 71.46,
+      "book_value": 148.7,
+      "pbv": 8.79
     },
     {
       "symbol": "DOLTI",
       "sector": "Hydropower",
-      "ltp": 339.9
+      "ltp": 339.9,
+      "listed_shares": 5364860.0,
+      "market_cap": 1823515914.0,
+      "float_market_cap": 1823515914.0,
+      "eps": 0.83,
+      "pe_ratio": 409.52,
+      "book_value": 58.54,
+      "pbv": 5.81
     },
     {
       "symbol": "DORDI",
       "sector": "Hydropower",
-      "ltp": 252.0
+      "ltp": 252.0,
+      "listed_shares": 21085208.0,
+      "market_cap": 5313472416.0,
+      "float_market_cap": 5313472416.0,
+      "eps": 0.83,
+      "pe_ratio": 303.61,
+      "book_value": 105.5,
+      "pbv": 2.39
     },
     {
       "symbol": "EBL",
       "sector": "Commercial Bank",
-      "ltp": 700.0
+      "ltp": 700.0,
+      "listed_shares": 137213760.0,
+      "market_cap": 96049632000.0,
+      "float_market_cap": 39159434300.0,
+      "eps": 32.35,
+      "pe_ratio": 21.64,
+      "book_value": 244.27,
+      "pbv": 2.87
     },
     {
       "symbol": "EDBL",
       "sector": "Development Bank",
-      "ltp": 569.5
+      "ltp": 569.5,
+      "listed_shares": 12496945.0,
+      "market_cap": 7117010177.5,
+      "float_market_cap": 3487334958.0,
+      "eps": 16.61,
+      "pe_ratio": 34.29,
+      "book_value": 184.0,
+      "pbv": 3.1
     },
     {
       "symbol": "EHPL",
       "sector": "Hydropower",
-      "ltp": 369.2
+      "ltp": 369.2,
+      "listed_shares": 6200000.0,
+      "market_cap": 2289040000.0,
+      "float_market_cap": 2289040000.0,
+      "eps": 6.42,
+      "pe_ratio": 57.51,
+      "book_value": 77.73,
+      "pbv": 4.75
     },
     {
       "symbol": "ENL",
       "sector": "Investment",
-      "ltp": 838.0
+      "ltp": 838.0,
+      "listed_shares": 5556000.0,
+      "market_cap": 4655928000.0,
+      "float_market_cap": 4655928000.0,
+      "eps": 4.26,
+      "pe_ratio": 196.71,
+      "book_value": 110.58,
+      "pbv": 7.58
     },
     {
       "symbol": "FMDBL",
       "sector": "Microfinance",
-      "ltp": 761.0
+      "ltp": 761.0,
+      "listed_shares": 13448714.0,
+      "market_cap": 10234471354.0,
+      "float_market_cap": 5014890309.0,
+      "eps": 11.27,
+      "pe_ratio": 67.52,
+      "book_value": 131.53,
+      "pbv": 5.79
     },
     {
       "symbol": "FOWAD",
       "sector": "Microfinance",
-      "ltp": 990.0
+      "ltp": 990.0,
+      "listed_shares": 11959538.0,
+      "market_cap": 11839942620.0,
+      "float_market_cap": 3551982390.0,
+      "eps": 18.15,
+      "pe_ratio": 54.55,
+      "book_value": 239.61,
+      "pbv": 4.13
     },
     {
       "symbol": "GBBL",
       "sector": "Development Bank",
-      "ltp": 404.1
+      "ltp": 404.1,
+      "listed_shares": 60213486.0,
+      "market_cap": 24332269692.6,
+      "float_market_cap": 11922812092.0,
+      "eps": 23.21,
+      "pe_ratio": 17.41,
+      "book_value": 167.58,
+      "pbv": 2.41
     },
     {
       "symbol": "GBIME",
       "sector": "Commercial Bank",
-      "ltp": 243.0
+      "ltp": 243.0,
+      "listed_shares": 381158528.0,
+      "market_cap": 92621522304.0,
+      "float_market_cap": 45384545754.0,
+      "eps": 15.4,
+      "pe_ratio": 15.78,
+      "book_value": 178.53,
+      "pbv": 1.36
     },
     {
       "symbol": "GBLBS",
       "sector": "Microfinance",
-      "ltp": 759.0
+      "ltp": 759.0,
+      "listed_shares": 10053500.0,
+      "market_cap": 7630606500.0,
+      "float_market_cap": 2289181950.0,
+      "eps": 40.0,
+      "pe_ratio": 18.98,
+      "book_value": 295.18,
+      "pbv": 2.57
     },
     {
       "symbol": "GCIL",
       "sector": "Manufacturing & Processing",
-      "ltp": 355.0
+      "ltp": 355.0,
+      "listed_shares": 50244543.0,
+      "market_cap": 17836812765.0,
+      "float_market_cap": 3388994365.0,
+      "eps": -4.21,
+      "pe_ratio": -84.32,
+      "book_value": 168.7,
+      "pbv": 2.1
     },
     {
       "symbol": "GFCL",
       "sector": "Finance",
-      "ltp": 627.0
+      "ltp": 627.0,
+      "listed_shares": 9461152.0,
+      "market_cap": 5932142304.0,
+      "float_market_cap": 2906749428.0,
+      "eps": 14.28,
+      "pe_ratio": 43.91,
+      "book_value": 207.18,
+      "pbv": 3.03
     },
     {
       "symbol": "GHL",
       "sector": "Hydropower",
-      "ltp": 223.0
+      "ltp": 223.0,
+      "listed_shares": 16500000.0,
+      "market_cap": 3679500000.0,
+      "float_market_cap": 3679500000.0,
+      "eps": -2.15,
+      "pe_ratio": -103.72,
+      "book_value": 95.07,
+      "pbv": 2.35
     },
     {
       "symbol": "GILB",
       "sector": "Microfinance",
-      "ltp": 1119.0
+      "ltp": 1119.0,
+      "listed_shares": 6482980.0,
+      "market_cap": 7254454620.0,
+      "float_market_cap": 2176336386.0,
+      "eps": 45.16,
+      "pe_ratio": 24.78,
+      "book_value": 214.72,
+      "pbv": 5.21
     },
     {
       "symbol": "GLBSL",
       "sector": "Microfinance",
-      "ltp": 1803.0
+      "ltp": 1803.0,
+      "listed_shares": 1323581.0,
+      "market_cap": 2386416543.0,
+      "float_market_cap": 763651635.0,
+      "eps": 40.62,
+      "pe_ratio": 44.39,
+      "book_value": 168.91,
+      "pbv": 10.67
     },
     {
       "symbol": "GLH",
       "sector": "Hydropower",
-      "ltp": 253.9
+      "ltp": 253.9,
+      "listed_shares": 18000000.0,
+      "market_cap": 4570200000.0,
+      "float_market_cap": 4570200000.0,
+      "eps": 2.18,
+      "pe_ratio": 116.47,
+      "book_value": 111.36,
+      "pbv": 2.28
     },
     {
       "symbol": "GMFBS",
       "sector": "Microfinance",
-      "ltp": 1235.0
+      "ltp": 1235.0,
+      "listed_shares": 1515546.0,
+      "market_cap": 1871699310.0,
+      "float_market_cap": 598942890.0,
+      "eps": 53.71,
+      "pe_ratio": 22.99,
+      "book_value": 169.51,
+      "pbv": 7.29
     },
     {
       "symbol": "GMFIL",
       "sector": "Finance",
-      "ltp": 468.0
+      "ltp": 468.0,
+      "listed_shares": 10121760.0,
+      "market_cap": 4736983680.0,
+      "float_market_cap": 2321121816.0,
+      "eps": 6.0,
+      "pe_ratio": 78.0,
+      "book_value": 168.38,
+      "pbv": 2.78
     },
     {
       "symbol": "GMLI",
       "sector": "Life Insurance",
-      "ltp": 1180.0
+      "ltp": 1180.0,
+      "listed_shares": 7500000.0,
+      "market_cap": 8850000000.0,
+      "float_market_cap": 2655000000.0,
+      "eps": 2.59,
+      "pe_ratio": 455.6,
+      "book_value": 107.08,
+      "pbv": 11.02
     },
     {
       "symbol": "GRDBL",
       "sector": "Development Bank",
-      "ltp": 1040.0
+      "ltp": 1040.0,
+      "listed_shares": 6155000.0,
+      "market_cap": 6401200000.0,
+      "float_market_cap": 3136588000.0,
+      "eps": 7.63,
+      "pe_ratio": 136.3,
+      "book_value": 116.8,
+      "pbv": 8.9
     },
     {
       "symbol": "GUFL",
       "sector": "Finance",
-      "ltp": 557.0
+      "ltp": 557.0,
+      "listed_shares": 8679938.0,
+      "market_cap": 4834725466.0,
+      "float_market_cap": 2369015133.0,
+      "eps": 19.89,
+      "pe_ratio": 28.0,
+      "book_value": 157.88,
+      "pbv": 3.53
     },
     {
       "symbol": "HATHY",
       "sector": "Investment",
-      "ltp": 701.0
+      "ltp": 701.0,
+      "listed_shares": 31711680.0,
+      "market_cap": 22229887680.0,
+      "float_market_cap": 2778735960.0,
+      "eps": 0.95,
+      "pe_ratio": 737.89,
+      "book_value": 67.44,
+      "pbv": 10.39
     },
     {
       "symbol": "HBL",
       "sector": "Commercial Bank",
-      "ltp": 198.3
+      "ltp": 198.3,
+      "listed_shares": 225816627.0,
+      "market_cap": 44779437134.1,
+      "float_market_cap": 16572869553.0,
+      "eps": 4.5,
+      "pe_ratio": 44.07,
+      "book_value": 171.96,
+      "pbv": 1.15
     },
     {
       "symbol": "HDHPC",
       "sector": "Hydropower",
-      "ltp": 206.3
+      "ltp": 206.3,
+      "listed_shares": 28000000.0,
+      "market_cap": 5776400000.0,
+      "float_market_cap": 5776400000.0,
+      "eps": -4.36,
+      "pe_ratio": -47.32,
+      "book_value": 74.09,
+      "pbv": 2.78
     },
     {
       "symbol": "HEI",
       "sector": "Non-Life Insurance",
-      "ltp": 543.0
+      "ltp": 543.0,
+      "listed_shares": 25001574.0,
+      "market_cap": 13575854682.0,
+      "float_market_cap": 6652168653.0,
+      "eps": 5.9,
+      "pe_ratio": 92.03,
+      "book_value": 205.28,
+      "pbv": 2.65
     },
     {
       "symbol": "HFIN",
       "sector": "Hotel & Tourism",
-      "ltp": 727.0
+      "ltp": 727.0,
+      "listed_shares": 20000000.0,
+      "market_cap": 14540000000.0,
+      "float_market_cap": 2908000000.0,
+      "eps": -3.6,
+      "pe_ratio": -201.94,
+      "book_value": 110.51,
+      "pbv": 6.58
     },
     {
       "symbol": "HIDCL",
       "sector": "Investment",
-      "ltp": 253.0
+      "ltp": 253.0,
+      "listed_shares": 249282106.0,
+      "market_cap": 63068372818.0,
+      "float_market_cap": 12613674513.0,
+      "eps": 2.93,
+      "pe_ratio": 86.35,
+      "book_value": 112.61,
+      "pbv": 2.25
     },
     {
       "symbol": "HLBSL",
       "sector": "Microfinance",
-      "ltp": 869.0
+      "ltp": 869.0,
+      "listed_shares": 3410862.0,
+      "market_cap": 2964039078.0,
+      "float_market_cap": 1452378818.0,
+      "eps": 31.68,
+      "pe_ratio": 27.43,
+      "book_value": 178.01,
+      "pbv": 4.88
     },
     {
       "symbol": "HLI",
       "sector": "Life Insurance",
-      "ltp": 324.0
+      "ltp": 324.0,
+      "listed_shares": 91432374.0,
+      "market_cap": 29624089176.0,
+      "float_market_cap": 14515803612.0,
+      "eps": 3.81,
+      "pe_ratio": 85.04,
+      "book_value": 100.45,
+      "pbv": 3.23
     },
     {
       "symbol": "HPPL",
       "sector": "Hydropower",
-      "ltp": 362.9
+      "ltp": 362.9,
+      "listed_shares": 15981255.0,
+      "market_cap": 5799597439.5,
+      "float_market_cap": 5799597439.0,
+      "eps": 15.76,
+      "pe_ratio": 23.03,
+      "book_value": 127.79,
+      "pbv": 2.84
     },
     {
       "symbol": "HRL",
       "sector": "Others",
-      "ltp": 583.0
+      "ltp": 583.0,
+      "listed_shares": 108680000.0,
+      "market_cap": 63360440000.0,
+      "float_market_cap": 19008132000.0,
+      "eps": -0.54,
+      "pe_ratio": -1079.63,
+      "book_value": 150.18,
+      "pbv": 3.88
     },
     {
       "symbol": "HURJA",
       "sector": "Hydropower",
-      "ltp": 233.3
+      "ltp": 233.3,
+      "listed_shares": 19800000.0,
+      "market_cap": 4619340000.0,
+      "float_market_cap": 4619340000.0,
+      "eps": 3.99,
+      "pe_ratio": 58.47,
+      "book_value": 93.55,
+      "pbv": 2.49
     },
     {
       "symbol": "ICFC",
       "sector": "Finance",
-      "ltp": 615.0
+      "ltp": 615.0,
+      "listed_shares": 11834710.0,
+      "market_cap": 7278346650.0,
+      "float_market_cap": 3566389305.0,
+      "eps": 11.62,
+      "pe_ratio": 52.93,
+      "book_value": 176.61,
+      "pbv": 3.48
     },
     {
       "symbol": "IGI",
       "sector": "Non-Life Insurance",
-      "ltp": 430.0
+      "ltp": 430.0,
+      "listed_shares": 30293347.0,
+      "market_cap": 13026139210.0,
+      "float_market_cap": 6382808200.0,
+      "eps": 0.02,
+      "pe_ratio": 21500.0,
+      "book_value": 182.72,
+      "pbv": 2.35
     },
     {
       "symbol": "IHL",
       "sector": "Hydropower",
-      "ltp": 373.0
+      "ltp": 373.0,
+      "listed_shares": 6000000.0,
+      "market_cap": 2238000000.0,
+      "float_market_cap": 2238000000.0,
+      "eps": 2.64,
+      "pe_ratio": 141.29,
+      "book_value": 97.73,
+      "pbv": 3.82
     },
     {
       "symbol": "ILBS",
       "sector": "Microfinance",
-      "ltp": 886.3
+      "ltp": 886.3,
+      "listed_shares": 4974160.0,
+      "market_cap": 4408598008.0,
+      "float_market_cap": 1410751185.0,
+      "eps": 20.31,
+      "pe_ratio": 43.64,
+      "book_value": 140.07,
+      "pbv": 6.33
     },
     {
       "symbol": "ILI",
       "sector": "Life Insurance",
-      "ltp": 422.0
+      "ltp": 422.0,
+      "listed_shares": 50000000.0,
+      "market_cap": 21100000000.0,
+      "float_market_cap": 6330000000.0,
+      "eps": 9.81,
+      "pe_ratio": 43.02,
+      "book_value": 131.49,
+      "pbv": 3.21
     },
     {
       "symbol": "JBBL",
       "sector": "Development Bank",
-      "ltp": 343.0
+      "ltp": 343.0,
+      "listed_shares": 43957860.0,
+      "market_cap": 15077545980.0,
+      "float_market_cap": 7387997393.0,
+      "eps": 19.09,
+      "pe_ratio": 17.97,
+      "book_value": 163.43,
+      "pbv": 2.1
     },
     {
       "symbol": "JBLB",
       "sector": "Microfinance",
-      "ltp": 1245.0
+      "ltp": 1245.0,
+      "listed_shares": 17512356.0,
+      "market_cap": 21802883220.0,
+      "float_market_cap": 7194950865.0,
+      "eps": 47.73,
+      "pe_ratio": 26.08,
+      "book_value": 255.24,
+      "pbv": 4.88
     },
     {
       "symbol": "JFL",
       "sector": "Finance",
-      "ltp": 398.5
+      "ltp": 398.5,
+      "listed_shares": 6904728.0,
+      "market_cap": 2751534108.0,
+      "float_market_cap": 1348251426.0,
+      "eps": -5.62,
+      "pe_ratio": -70.91,
+      "book_value": -6.46,
+      "pbv": -61.69
     },
     {
       "symbol": "JHAPA",
       "sector": "Others",
-      "ltp": 1269.0
+      "ltp": 1269.0,
+      "listed_shares": 3801900.0,
+      "market_cap": 4824611100.0,
+      "float_market_cap": 1206152775.0,
+      "eps": 5.63,
+      "pe_ratio": 225.4,
+      "book_value": 102.36,
+      "pbv": 12.4
     },
     {
       "symbol": "JSLBB",
       "sector": "Microfinance",
-      "ltp": 1016.0
+      "ltp": 1016.0,
+      "listed_shares": 1700919.0,
+      "market_cap": 1728133704.0,
+      "float_market_cap": 777659608.0,
+      "eps": 8.09,
+      "pe_ratio": 125.59,
+      "book_value": 170.91,
+      "pbv": 5.94
     },
     {
       "symbol": "KBL",
       "sector": "Commercial Bank",
-      "ltp": 214.9
+      "ltp": 214.9,
+      "listed_shares": 262258613.0,
+      "market_cap": 56359375933.7,
+      "float_market_cap": 27616094128.0,
+      "eps": 21.24,
+      "pe_ratio": 10.12,
+      "book_value": 158.53,
+      "pbv": 1.36
     },
     {
       "symbol": "KDL",
       "sector": "Hotel & Tourism",
-      "ltp": 770.0
+      "ltp": 770.0,
+      "listed_shares": 6300000.0,
+      "market_cap": 4851000000.0,
+      "float_market_cap": 4851000000.0,
+      "eps": 10.52,
+      "pe_ratio": 73.19,
+      "book_value": 107.94,
+      "pbv": 7.13
     },
     {
       "symbol": "KHPL",
       "sector": "Hydropower",
-      "ltp": 865.0
+      "ltp": 865.0,
+      "listed_shares": 5500000.0,
+      "market_cap": 4757500000.0,
+      "float_market_cap": 1189375000.0,
+      "eps": 0.29,
+      "pe_ratio": 2982.76,
+      "book_value": 105.5,
+      "pbv": 8.2
     },
     {
       "symbol": "KKHC",
       "sector": "Hydropower",
-      "ltp": 288.0
+      "ltp": 288.0,
+      "listed_shares": 9314286.0,
+      "market_cap": 2682514368.0,
+      "float_market_cap": 2682514368.0,
+      "eps": -2.08,
+      "pe_ratio": -138.46,
+      "book_value": 88.57,
+      "pbv": 3.25
     },
     {
       "symbol": "KMCDB",
       "sector": "Microfinance",
-      "ltp": 815.0
+      "ltp": 815.0,
+      "listed_shares": 4484618.0,
+      "market_cap": 3654963670.0,
+      "float_market_cap": 1279237040.0,
+      "eps": 4.37,
+      "pe_ratio": 186.5,
+      "book_value": 154.96,
+      "pbv": 5.26
     },
     {
       "symbol": "KPCL",
       "sector": "Hydropower",
-      "ltp": 472.8
+      "ltp": 472.8,
+      "listed_shares": 9993260.0,
+      "market_cap": 4724813328.0,
+      "float_market_cap": 4724813328.0,
+      "eps": 12.77,
+      "pe_ratio": 37.02,
+      "book_value": 123.52,
+      "pbv": 3.83
     },
     {
       "symbol": "LBBL",
       "sector": "Development Bank",
-      "ltp": 482.9
+      "ltp": 482.9,
+      "listed_shares": 36236782.0,
+      "market_cap": 17498742027.8,
+      "float_market_cap": 8574383506.0,
+      "eps": 20.67,
+      "pe_ratio": 23.36,
+      "book_value": 205.4,
+      "pbv": 2.35
     },
     {
       "symbol": "LEC",
       "sector": "Hydropower",
-      "ltp": 211.0
+      "ltp": 211.0,
+      "listed_shares": 22500000.0,
+      "market_cap": 4747500000.0,
+      "float_market_cap": 4747500000.0,
+      "eps": 0.6,
+      "pe_ratio": 351.67,
+      "book_value": 69.77,
+      "pbv": 3.02
     },
     {
       "symbol": "LICN",
       "sector": "Life Insurance",
-      "ltp": 790.0
+      "ltp": 790.0,
+      "listed_shares": 55000000.0,
+      "market_cap": 43450000000.0,
+      "float_market_cap": 13035000000.0,
+      "eps": 7.77,
+      "pe_ratio": 101.67,
+      "book_value": 176.47,
+      "pbv": 4.48
     },
     {
       "symbol": "LLBS",
       "sector": "Microfinance",
-      "ltp": 942.0
+      "ltp": 942.0,
+      "listed_shares": 4416621.0,
+      "market_cap": 4160456982.0,
+      "float_market_cap": 1248136812.0,
+      "eps": 17.29,
+      "pe_ratio": 54.48,
+      "book_value": 192.91,
+      "pbv": 4.88
     },
     {
       "symbol": "MABEL",
       "sector": "Hydropower",
-      "ltp": 640.0
+      "ltp": 640.0,
+      "listed_shares": 3858240.0,
+      "market_cap": 2469273600.0,
+      "float_market_cap": 1209943680.0,
+      "eps": 1.52,
+      "pe_ratio": 421.05,
+      "book_value": 105.9,
+      "pbv": 6.04
     },
     {
       "symbol": "MAKAR",
       "sector": "Hydropower",
-      "ltp": 479.0
+      "ltp": 479.0,
+      "listed_shares": 7600000.0,
+      "market_cap": 3640400000.0,
+      "float_market_cap": 3640400000.0,
+      "eps": 15.28,
+      "pe_ratio": 31.35,
+      "book_value": 115.79,
+      "pbv": 4.14
     },
     {
       "symbol": "MANDU",
       "sector": "Hydropower",
-      "ltp": 811.0
+      "ltp": 811.0,
+      "listed_shares": 13636370.0,
+      "market_cap": 11059096070.0,
+      "float_market_cap": 1105909607.0,
+      "eps": 24.27,
+      "pe_ratio": 33.42,
+      "book_value": 159.45,
+      "pbv": 5.09
     },
     {
       "symbol": "MATRI",
       "sector": "Microfinance",
-      "ltp": 888.0
+      "ltp": 888.0,
+      "listed_shares": 6283574.0,
+      "market_cap": 5579813712.0,
+      "float_market_cap": 1673943936.0,
+      "eps": 6.01,
+      "pe_ratio": 147.75,
+      "book_value": 132.26,
+      "pbv": 6.71
     },
     {
       "symbol": "MBJC",
       "sector": "Hydropower",
-      "ltp": 275.1
+      "ltp": 275.1,
+      "listed_shares": 60000000.0,
+      "market_cap": 16506000000.0,
+      "float_market_cap": 16506000000.0,
+      "eps": 1.71,
+      "pe_ratio": 160.88,
+      "book_value": 94.7,
+      "pbv": 2.9
     },
     {
       "symbol": "MCHL",
       "sector": "Hydropower",
-      "ltp": 296.0
+      "ltp": 296.0,
+      "listed_shares": 5425833.0,
+      "market_cap": 1606046568.0,
+      "float_market_cap": 1606046568.0,
+      "eps": 0.93,
+      "pe_ratio": 318.28,
+      "book_value": -23.87,
+      "pbv": -12.4
     },
     {
       "symbol": "MDB",
       "sector": "Development Bank",
-      "ltp": 579.3
+      "ltp": 579.3,
+      "listed_shares": 12171002.0,
+      "market_cap": 7050661458.6,
+      "float_market_cap": 3454823547.0,
+      "eps": 10.54,
+      "pe_ratio": 54.96,
+      "book_value": 139.36,
+      "pbv": 4.16
     },
     {
       "symbol": "MEHL",
       "sector": "Hydropower",
-      "ltp": 327.0
+      "ltp": 327.0,
+      "listed_shares": 8000000.0,
+      "market_cap": 2616000000.0,
+      "float_market_cap": 654000000.0,
+      "eps": 1.23,
+      "pe_ratio": 265.85,
+      "book_value": 63.61,
+      "pbv": 5.14
     },
     {
       "symbol": "MEL",
       "sector": "Hydropower",
-      "ltp": 218.0
+      "ltp": 218.0,
+      "listed_shares": 29000000.0,
+      "market_cap": 6322000000.0,
+      "float_market_cap": 6322000000.0,
+      "eps": -3.11,
+      "pe_ratio": -70.1,
+      "book_value": 58.62,
+      "pbv": 3.72
     },
     {
       "symbol": "MEN",
       "sector": "Hydropower",
-      "ltp": 574.0
+      "ltp": 574.0,
+      "listed_shares": 31232590.0,
+      "market_cap": 17927506660.0,
+      "float_market_cap": 17927506660.0,
+      "eps": 22.52,
+      "pe_ratio": 25.49,
+      "book_value": 148.71,
+      "pbv": 3.86
     },
     {
       "symbol": "MERO",
       "sector": "Microfinance",
-      "ltp": 705.0
+      "ltp": 705.0,
+      "listed_shares": 14864025.0,
+      "market_cap": 10479137625.0,
+      "float_market_cap": 5134777260.0,
+      "eps": 13.33,
+      "pe_ratio": 52.89,
+      "book_value": 151.87,
+      "pbv": 4.64
     },
     {
       "symbol": "MHCL",
       "sector": "Hydropower",
-      "ltp": 326.5
+      "ltp": 326.5,
+      "listed_shares": 8025000.0,
+      "market_cap": 2620162500.0,
+      "float_market_cap": 2620162500.0,
+      "eps": 10.4,
+      "pe_ratio": 31.39,
+      "book_value": 87.89,
+      "pbv": 3.71
     },
     {
       "symbol": "MHL",
       "sector": "Hydropower",
-      "ltp": 476.8
+      "ltp": 476.8,
+      "listed_shares": 6467672.0,
+      "market_cap": 3083786009.6,
+      "float_market_cap": 3083786009.0,
+      "eps": 8.47,
+      "pe_ratio": 56.29,
+      "book_value": 113.44,
+      "pbv": 4.2
     },
     {
       "symbol": "MHNL",
       "sector": "Hydropower",
-      "ltp": 241.0
+      "ltp": 241.0,
+      "listed_shares": 12500000.0,
+      "market_cap": 3012500000.0,
+      "float_market_cap": 3012500000.0,
+      "eps": 8.19,
+      "pe_ratio": 29.43,
+      "book_value": 36.73,
+      "pbv": 6.56
     },
     {
       "symbol": "MKCL",
       "sector": "Others",
-      "ltp": 1097.9
+      "ltp": 1097.9,
+      "listed_shares": 7560000.0,
+      "market_cap": 8300124000.0,
+      "float_market_cap": 1660024800.0,
+      "eps": -3.49,
+      "pe_ratio": -314.58,
+      "book_value": 103.75,
+      "pbv": 10.58
     },
     {
       "symbol": "MKHC",
       "sector": "Hydropower",
-      "ltp": 299.0
+      "ltp": 299.0,
+      "listed_shares": 10000000.0,
+      "market_cap": 2990000000.0,
+      "float_market_cap": 2990000000.0,
+      "eps": 3.9,
+      "pe_ratio": 76.67,
+      "book_value": 63.15,
+      "pbv": 4.73
     },
     {
       "symbol": "MKHL",
       "sector": "Hydropower",
-      "ltp": 504.7
+      "ltp": 504.7,
+      "listed_shares": 3921568.0,
+      "market_cap": 1979215369.6,
+      "float_market_cap": 1979215369.0,
+      "eps": 3.92,
+      "pe_ratio": 128.75,
+      "book_value": 103.9,
+      "pbv": 4.86
     },
     {
       "symbol": "MKJC",
       "sector": "Hydropower",
-      "ltp": 461.0
+      "ltp": 461.0,
+      "listed_shares": 3763198.0,
+      "market_cap": 1734834278.0,
+      "float_market_cap": 1734834278.0,
+      "eps": 4.09,
+      "pe_ratio": 112.71,
+      "book_value": 104.59,
+      "pbv": 4.41
     },
     {
       "symbol": "MLBBL",
       "sector": "Microfinance",
-      "ltp": 1150.0
+      "ltp": 1150.0,
+      "listed_shares": 2558437.0,
+      "market_cap": 2942202550.0,
+      "float_market_cap": 1441679100.0,
+      "eps": 38.36,
+      "pe_ratio": 29.98,
+      "book_value": 199.67,
+      "pbv": 5.76
     },
     {
       "symbol": "MLBL",
       "sector": "Development Bank",
-      "ltp": 356.0
+      "ltp": 356.0,
+      "listed_shares": 45112811.0,
+      "market_cap": 16060160716.0,
+      "float_market_cap": 7869478612.0,
+      "eps": 13.59,
+      "pe_ratio": 26.2,
+      "book_value": 162.01,
+      "pbv": 2.2
     },
     {
       "symbol": "MLBS",
       "sector": "Microfinance",
-      "ltp": 1189.9
+      "ltp": 1189.9,
+      "listed_shares": 1093750.0,
+      "market_cap": 1301453125.0,
+      "float_market_cap": 468523125.0,
+      "eps": 16.06,
+      "pe_ratio": 74.09,
+      "book_value": 141.2,
+      "pbv": 8.43
     },
     {
       "symbol": "MLBSL",
       "sector": "Microfinance",
-      "ltp": 1712.0
+      "ltp": 1712.0,
+      "listed_shares": 2175625.0,
+      "market_cap": 3724670000.0,
+      "float_market_cap": 1489868000.0,
+      "eps": 33.74,
+      "pe_ratio": 50.74,
+      "book_value": 243.39,
+      "pbv": 7.03
     },
     {
       "symbol": "MMKJL",
       "sector": "Hydropower",
-      "ltp": 470.3
+      "ltp": 470.3,
+      "listed_shares": 10000000.0,
+      "market_cap": 4703000000.0,
+      "float_market_cap": 705450000.0,
+      "eps": 11.28,
+      "pe_ratio": 41.69,
+      "book_value": 97.94,
+      "pbv": 4.8
     },
     {
       "symbol": "MNBBL",
       "sector": "Development Bank",
-      "ltp": 366.0
+      "ltp": 366.0,
+      "listed_shares": 80003890.0,
+      "market_cap": 29281423740.0,
+      "float_market_cap": 14347897596.0,
+      "eps": 15.71,
+      "pe_ratio": 23.3,
+      "book_value": 155.09,
+      "pbv": 2.36
     },
     {
       "symbol": "MPFL",
       "sector": "Finance",
-      "ltp": 619.0
+      "ltp": 619.0,
+      "listed_shares": 6102000.0,
+      "market_cap": 3777138000.0,
+      "float_market_cap": 1850797620.0,
+      "eps": 1.16,
+      "pe_ratio": 533.62,
+      "book_value": 119.31,
+      "pbv": 5.19
     },
     {
       "symbol": "MSLB",
       "sector": "Microfinance",
-      "ltp": 1235.0
+      "ltp": 1235.0,
+      "listed_shares": 3874951.0,
+      "market_cap": 4785564485.0,
+      "float_market_cap": 1435668975.0,
+      "eps": 42.26,
+      "pe_ratio": 29.22,
+      "book_value": 210.37,
+      "pbv": 5.87
     },
     {
       "symbol": "NABBC",
       "sector": "Development Bank",
-      "ltp": 754.0
+      "ltp": 754.0,
+      "listed_shares": 5249352.0,
+      "market_cap": 3958011408.0,
+      "float_market_cap": 1147823248.0,
+      "eps": -12.64,
+      "pe_ratio": -59.65,
+      "book_value": 32.98,
+      "pbv": 22.86
     },
     {
       "symbol": "NABIL",
       "sector": "Commercial Bank",
-      "ltp": 530.0
+      "ltp": 530.0,
+      "listed_shares": 270569984.0,
+      "market_cap": 143402091520.0,
+      "float_market_cap": 57360836290.0,
+      "eps": 33.34,
+      "pe_ratio": 15.9,
+      "book_value": 243.3,
+      "pbv": 2.18
     },
     {
       "symbol": "NADEP",
       "sector": "Microfinance",
-      "ltp": 721.3
+      "ltp": 721.3,
+      "listed_shares": 4857600.0,
+      "market_cap": 3503786880.0,
+      "float_market_cap": 1051136064.0,
+      "eps": 17.87,
+      "pe_ratio": 40.36,
+      "book_value": 162.87,
+      "pbv": 4.43
     },
     {
       "symbol": "NBL",
       "sector": "Commercial Bank",
-      "ltp": 267.7
+      "ltp": 267.7,
+      "listed_shares": 146940230.0,
+      "market_cap": 39335899571.0,
+      "float_market_cap": 19274590602.0,
+      "eps": 25.34,
+      "pe_ratio": 10.56,
+      "book_value": 272.79,
+      "pbv": 0.98
     },
     {
       "symbol": "NESDO",
       "sector": "Microfinance",
-      "ltp": 1525.0
+      "ltp": 1525.0,
+      "listed_shares": 2913375.0,
+      "market_cap": 4442896875.0,
+      "float_market_cap": 1466154825.0,
+      "eps": 65.09,
+      "pe_ratio": 23.43,
+      "book_value": 287.49,
+      "pbv": 5.3
     },
     {
       "symbol": "NFS",
       "sector": "Finance",
-      "ltp": 670.0
+      "ltp": 670.0,
+      "listed_shares": 8389439.0,
+      "market_cap": 5620924130.0,
+      "float_market_cap": 2248369250.0,
+      "eps": -13.52,
+      "pe_ratio": -49.56,
+      "book_value": 122.4,
+      "pbv": 5.47
     },
     {
       "symbol": "NGPL",
       "sector": "Hydropower",
-      "ltp": 412.2
+      "ltp": 412.2,
+      "listed_shares": 38784301.0,
+      "market_cap": 15986888872.2,
+      "float_market_cap": 15986888872.0,
+      "eps": 1.39,
+      "pe_ratio": 296.55,
+      "book_value": 151.88,
+      "pbv": 2.71
     },
     {
       "symbol": "NHDL",
       "sector": "Hydropower",
-      "ltp": 637.0
+      "ltp": 637.0,
+      "listed_shares": 4231344.0,
+      "market_cap": 2695366128.0,
+      "float_market_cap": 2695366128.0,
+      "eps": 16.75,
+      "pe_ratio": 38.03,
+      "book_value": 123.6,
+      "pbv": 5.15
     },
     {
       "symbol": "NHPC",
       "sector": "Hydropower",
-      "ltp": 261.9
+      "ltp": 261.9,
+      "listed_shares": 24664380.0,
+      "market_cap": 6459601122.0,
+      "float_market_cap": 6459601122.0,
+      "eps": 1.04,
+      "pe_ratio": 251.83,
+      "book_value": 97.14,
+      "pbv": 2.7
     },
     {
       "symbol": "NICA",
       "sector": "Commercial Bank",
-      "ltp": 335.1
+      "ltp": 335.1,
+      "listed_shares": 149175670.0,
+      "market_cap": 49988767017.0,
+      "float_market_cap": 24494495737.0,
+      "eps": 1.25,
+      "pe_ratio": 268.08,
+      "book_value": 172.97,
+      "pbv": 1.94
     },
     {
       "symbol": "NICL",
       "sector": "Non-Life Insurance",
-      "ltp": 522.8
+      "ltp": 522.8,
+      "listed_shares": 25485751.0,
+      "market_cap": 13323950622.8,
+      "float_market_cap": 6528735287.0,
+      "eps": 5.55,
+      "pe_ratio": 94.2,
+      "book_value": 173.04,
+      "pbv": 3.02
     },
     {
       "symbol": "NIFRA",
       "sector": "Investment",
-      "ltp": 249.2
+      "ltp": 249.2,
+      "listed_shares": 216000000.0,
+      "market_cap": 53827200000.0,
+      "float_market_cap": 21530880000.0,
+      "eps": 3.97,
+      "pe_ratio": 62.77,
+      "book_value": 115.84,
+      "pbv": 2.15
     },
     {
       "symbol": "NIL",
       "sector": "Non-Life Insurance",
-      "ltp": 624.0
+      "ltp": 624.0,
+      "listed_shares": 27722783.0,
+      "market_cap": 17299016592.0,
+      "float_market_cap": 6919606512.0,
+      "eps": 7.89,
+      "pe_ratio": 79.09,
+      "book_value": 223.11,
+      "pbv": 2.8
     },
     {
       "symbol": "NIMB",
       "sector": "Commercial Bank",
-      "ltp": 195.9
+      "ltp": 195.9,
+      "listed_shares": 341285949.0,
+      "market_cap": 66857917409.1,
+      "float_market_cap": 26201617751.0,
+      "eps": 12.29,
+      "pe_ratio": 15.94,
+      "book_value": 199.72,
+      "pbv": 0.98
     },
     {
       "symbol": "NLG",
       "sector": "Non-Life Insurance",
-      "ltp": 590.0
+      "ltp": 590.0,
+      "listed_shares": 26678336.0,
+      "market_cap": 15740218240.0,
+      "float_market_cap": 7712706560.0,
+      "eps": 1.74,
+      "pe_ratio": 339.08,
+      "book_value": 170.93,
+      "pbv": 3.45
     },
     {
       "symbol": "NLIC",
       "sector": "Life Insurance",
-      "ltp": 744.5
+      "ltp": 744.5,
+      "listed_shares": 94802015.0,
+      "market_cap": 70580100167.5,
+      "float_market_cap": 34584248821.0,
+      "eps": 5.56,
+      "pe_ratio": 133.9,
+      "book_value": 126.33,
+      "pbv": 5.89
     },
     {
       "symbol": "NLICL",
       "sector": "Life Insurance",
-      "ltp": 573.0
+      "ltp": 573.0,
+      "listed_shares": 56916492.0,
+      "market_cap": 32613149916.0,
+      "float_market_cap": 11414602356.0,
+      "eps": 9.76,
+      "pe_ratio": 58.71,
+      "book_value": 130.39,
+      "pbv": 4.39
     },
     {
       "symbol": "NMB",
       "sector": "Commercial Bank",
-      "ltp": 239.2
+      "ltp": 239.2,
+      "listed_shares": 192850413.0,
+      "market_cap": 46129818789.6,
+      "float_market_cap": 22603611118.0,
+      "eps": 17.95,
+      "pe_ratio": 13.33,
+      "book_value": 175.79,
+      "pbv": 1.36
     },
     {
       "symbol": "NMBMF",
       "sector": "Microfinance",
-      "ltp": 617.0
+      "ltp": 617.0,
+      "listed_shares": 7214492.0,
+      "market_cap": 4451341564.0,
+      "float_market_cap": 2181157317.0,
+      "eps": 16.08,
+      "pe_ratio": 38.37,
+      "book_value": 142.44,
+      "pbv": 4.33
     },
     {
       "symbol": "NMFBS",
       "sector": "Microfinance",
-      "ltp": 1116.0
+      "ltp": 1116.0,
+      "listed_shares": 15213628.0,
+      "market_cap": 16978408848.0,
+      "float_market_cap": 5093522208.0,
+      "eps": 51.59,
+      "pe_ratio": 21.63,
+      "book_value": 259.51,
+      "pbv": 4.3
     },
     {
       "symbol": "NRIC",
       "sector": "Non-Life Insurance",
-      "ltp": 940.0
+      "ltp": 940.0,
+      "listed_shares": 134221871.0,
+      "market_cap": 126168558740.0,
+      "float_market_cap": 20186969060.0,
+      "eps": -118.98,
+      "pe_ratio": -7.9,
+      "book_value": 93.16,
+      "pbv": 10.09
     },
     {
       "symbol": "NRM",
       "sector": "Others",
-      "ltp": 335.0
+      "ltp": 335.0,
+      "listed_shares": 9675000.0,
+      "market_cap": 3241125000.0,
+      "float_market_cap": 1458181970.0,
+      "eps": -4.05,
+      "pe_ratio": -82.72,
+      "book_value": 85.78,
+      "pbv": 3.91
     },
     {
       "symbol": "NRN",
       "sector": "Investment",
-      "ltp": 1433.0
+      "ltp": 1433.0,
+      "listed_shares": 17981212.0,
+      "market_cap": 25767076796.0,
+      "float_market_cap": 25767076796.0,
+      "eps": -5.1,
+      "pe_ratio": -280.98,
+      "book_value": 172.44,
+      "pbv": 8.31
     },
     {
       "symbol": "NUBL",
       "sector": "Microfinance",
-      "ltp": 626.0
+      "ltp": 626.0,
+      "listed_shares": 27426838.0,
+      "market_cap": 17169200588.0,
+      "float_market_cap": 8412907900.0,
+      "eps": 7.54,
+      "pe_ratio": 83.02,
+      "book_value": 214.43,
+      "pbv": 2.92
     },
     {
       "symbol": "NWCL",
       "sector": "Others",
-      "ltp": 727.1
+      "ltp": 727.1,
+      "listed_shares": 6875000.0,
+      "market_cap": 4998812500.0,
+      "float_market_cap": 999762500.0,
+      "eps": -6.92,
+      "pe_ratio": -105.07,
+      "book_value": 99.09,
+      "pbv": 7.34
     },
     {
       "symbol": "NYADI",
       "sector": "Hydropower",
-      "ltp": 378.2
+      "ltp": 378.2,
+      "listed_shares": 15000000.0,
+      "market_cap": 5673000000.0,
+      "float_market_cap": 5673000000.0,
+      "eps": 13.14,
+      "pe_ratio": 28.78,
+      "book_value": 75.96,
+      "pbv": 4.98
     },
     {
       "symbol": "OHL",
       "sector": "Hotel & Tourism",
-      "ltp": 680.1
+      "ltp": 680.1,
+      "listed_shares": 11844950.0,
+      "market_cap": 8055750495.0,
+      "float_market_cap": 2416725148.0,
+      "eps": -3.98,
+      "pe_ratio": -170.88,
+      "book_value": 328.17,
+      "pbv": 2.07
     },
     {
       "symbol": "OMPL",
       "sector": "Manufacturing & Processing",
-      "ltp": 997.1
+      "ltp": 997.1,
+      "listed_shares": 6000000.0,
+      "market_cap": 5982600000.0,
+      "float_market_cap": 1794780000.0,
+      "eps": 3.3,
+      "pe_ratio": 302.15,
+      "book_value": 90.17,
+      "pbv": 11.06
     },
     {
       "symbol": "PCBL",
       "sector": "Commercial Bank",
-      "ltp": 236.0
+      "ltp": 236.0,
+      "listed_shares": 209547820.0,
+      "market_cap": 49453285520.0,
+      "float_market_cap": 24232109716.0,
+      "eps": 19.66,
+      "pe_ratio": 12.0,
+      "book_value": 171.28,
+      "pbv": 1.38
     },
     {
       "symbol": "PCIL",
       "sector": "Manufacturing & Processing",
-      "ltp": 654.0
+      "ltp": 654.0,
+      "listed_shares": 37500000.0,
+      "market_cap": 24525000000.0,
+      "float_market_cap": 4905000000.0,
+      "eps": 2.04,
+      "pe_ratio": 320.59,
+      "book_value": 129.58,
+      "pbv": 5.05
     },
     {
       "symbol": "PFL",
       "sector": "Finance",
-      "ltp": 360.0
+      "ltp": 360.0,
+      "listed_shares": 10825567.0,
+      "market_cap": 3897204120.0,
+      "float_market_cap": 1558881360.0,
+      "eps": 9.0,
+      "pe_ratio": 40.0,
+      "book_value": 63.41,
+      "pbv": 5.68
     },
     {
       "symbol": "PHCL",
       "sector": "Hydropower",
-      "ltp": 298.9
+      "ltp": 298.9,
+      "listed_shares": 32000000.0,
+      "market_cap": 9564800000.0,
+      "float_market_cap": 9564800000.0,
+      "eps": 0.16,
+      "pe_ratio": 1868.12,
+      "book_value": 100.23,
+      "pbv": 2.98
     },
     {
       "symbol": "PMHPL",
       "sector": "Hydropower",
-      "ltp": 325.9
+      "ltp": 325.9,
+      "listed_shares": 11000000.0,
+      "market_cap": 3584900000.0,
+      "float_market_cap": 3584900000.0,
+      "eps": 9.97,
+      "pe_ratio": 32.69,
+      "book_value": 84.8,
+      "pbv": 3.84
     },
     {
       "symbol": "PPCL",
       "sector": "Hydropower",
-      "ltp": 347.8
+      "ltp": 347.8,
+      "listed_shares": 9625000.0,
+      "market_cap": 3347575000.0,
+      "float_market_cap": 3347575000.0,
+      "eps": 8.34,
+      "pe_ratio": 41.7,
+      "book_value": 96.06,
+      "pbv": 3.62
     },
     {
       "symbol": "PPL",
       "sector": "Hydropower",
-      "ltp": 335.0
+      "ltp": 335.0,
+      "listed_shares": 9489000.0,
+      "market_cap": 3178815000.0,
+      "float_market_cap": 3178815000.0,
+      "eps": -2.53,
+      "pe_ratio": -132.41,
+      "book_value": 102.98,
+      "pbv": 3.25
     },
     {
       "symbol": "PRIN",
       "sector": "Non-Life Insurance",
-      "ltp": 700.0
+      "ltp": 700.0,
+      "listed_shares": 18489392.0,
+      "market_cap": 12942574400.0,
+      "float_market_cap": 6341861400.0,
+      "eps": 16.58,
+      "pe_ratio": 42.22,
+      "book_value": 209.55,
+      "pbv": 3.34
     },
     {
       "symbol": "PROFL",
       "sector": "Finance",
-      "ltp": 440.0
+      "ltp": 440.0,
+      "listed_shares": 8561070.0,
+      "market_cap": 3766870800.0,
+      "float_market_cap": 1845766560.0,
+      "eps": -3.89,
+      "pe_ratio": -113.11,
+      "book_value": 75.05,
+      "pbv": 5.86
     },
     {
       "symbol": "PRVU",
       "sector": "Commercial Bank",
-      "ltp": 194.4
+      "ltp": 194.4,
+      "listed_shares": 235424899.0,
+      "market_cap": 45766600365.6,
+      "float_market_cap": 22425634080.0,
+      "eps": 4.82,
+      "pe_ratio": 40.33,
+      "book_value": 146.26,
+      "pbv": 1.33
     },
     {
       "symbol": "PURE",
       "sector": "Others",
-      "ltp": 826.0
+      "ltp": 826.0,
+      "listed_shares": 8000000.0,
+      "market_cap": 6608000000.0,
+      "float_market_cap": 1321600000.0,
+      "eps": 1.95,
+      "pe_ratio": 423.59,
+      "book_value": 101.94,
+      "pbv": 8.1
     },
     {
       "symbol": "RADHI",
       "sector": "Hydropower",
-      "ltp": 720.0
+      "ltp": 720.0,
+      "listed_shares": 18389795.0,
+      "market_cap": 13240652400.0,
+      "float_market_cap": 13240652400.0,
+      "eps": 23.49,
+      "pe_ratio": 30.65,
+      "book_value": 176.26,
+      "pbv": 4.08
     },
     {
       "symbol": "RAWA",
       "sector": "Hydropower",
-      "ltp": 444.9
+      "ltp": 444.9,
+      "listed_shares": 2800000.0,
+      "market_cap": 1245720000.0,
+      "float_market_cap": 1245720000.0,
+      "eps": 12.77,
+      "pe_ratio": 34.84,
+      "book_value": 84.73,
+      "pbv": 5.25
     },
     {
       "symbol": "RFPL",
       "sector": "Hydropower",
-      "ltp": 343.1
+      "ltp": 343.1,
+      "listed_shares": 14000000.0,
+      "market_cap": 4803400000.0,
+      "float_market_cap": 4803400000.0,
+      "eps": 1.78,
+      "pe_ratio": 192.75,
+      "book_value": 118.41,
+      "pbv": 2.9
     },
     {
       "symbol": "RHGCL",
       "sector": "Hydropower",
-      "ltp": 272.0
+      "ltp": 272.0,
+      "listed_shares": 12255876.0,
+      "market_cap": 3333598272.0,
+      "float_market_cap": 3333598272.0,
+      "eps": 0.03,
+      "pe_ratio": 9066.67,
+      "book_value": 95.74,
+      "pbv": 2.84
     },
     {
       "symbol": "RHPL",
       "sector": "Hydropower",
-      "ltp": 264.0
+      "ltp": 264.0,
+      "listed_shares": 68421000.0,
+      "market_cap": 18063144000.0,
+      "float_market_cap": 18063144000.0,
+      "eps": -24.16,
+      "pe_ratio": -10.93,
+      "book_value": 70.04,
+      "pbv": 3.77
     },
     {
       "symbol": "RIDI",
       "sector": "Hydropower",
-      "ltp": 331.0
+      "ltp": 331.0,
+      "listed_shares": 23233518.0,
+      "market_cap": 7690294458.0,
+      "float_market_cap": 7690294458.0,
+      "eps": 4.3,
+      "pe_ratio": 76.98,
+      "book_value": 103.2,
+      "pbv": 3.21
     },
     {
       "symbol": "RLEL",
       "sector": "Hydropower",
-      "ltp": 860.0
+      "ltp": 860.0,
+      "listed_shares": 11850000.0,
+      "market_cap": 10191000000.0,
+      "float_market_cap": 2242020000.0,
+      "eps": 10.57,
+      "pe_ratio": 81.36,
+      "book_value": 125.06,
+      "pbv": 6.88
     },
     {
       "symbol": "RLFL",
       "sector": "Finance",
-      "ltp": 474.9
+      "ltp": 474.9,
+      "listed_shares": 11214518.0,
+      "market_cap": 5325774598.2,
+      "float_market_cap": 2609629163.0,
+      "eps": 4.51,
+      "pe_ratio": 105.3,
+      "book_value": 115.8,
+      "pbv": 4.1
     },
     {
       "symbol": "RNLI",
       "sector": "Life Insurance",
-      "ltp": 452.0
+      "ltp": 452.0,
+      "listed_shares": 51968000.0,
+      "market_cap": 23489536000.0,
+      "float_market_cap": 7046860800.0,
+      "eps": 12.07,
+      "pe_ratio": 37.45,
+      "book_value": 146.17,
+      "pbv": 3.09
     },
     {
       "symbol": "RSDC",
       "sector": "Microfinance",
-      "ltp": 658.0
+      "ltp": 658.0,
+      "listed_shares": 10340645.0,
+      "market_cap": 6804144410.0,
+      "float_market_cap": 3334030728.0,
+      "eps": 8.46,
+      "pe_ratio": 77.78,
+      "book_value": 124.07,
+      "pbv": 5.3
     },
     {
       "symbol": "RSML",
       "sector": "Manufacturing & Processing",
-      "ltp": 3200.0
+      "ltp": 3200.0,
+      "listed_shares": 19000000.0,
+      "market_cap": 60800000000.0,
+      "float_market_cap": 6165120000.0,
+      "eps": 18.73,
+      "pe_ratio": 170.85,
+      "book_value": 497.37,
+      "pbv": 6.43
     },
     {
       "symbol": "SADBL",
       "sector": "Development Bank",
-      "ltp": 408.0
+      "ltp": 408.0,
+      "listed_shares": 37340686.0,
+      "market_cap": 15234999888.0,
+      "float_market_cap": 7465149888.0,
+      "eps": 17.3,
+      "pe_ratio": 23.58,
+      "book_value": 158.79,
+      "pbv": 2.57
     },
     {
       "symbol": "SAIL",
       "sector": "Manufacturing & Processing",
-      "ltp": 905.3
+      "ltp": 905.3,
+      "listed_shares": 16312500.0,
+      "market_cap": 14767706250.0,
+      "float_market_cap": 2953541250.0,
+      "eps": 1.64,
+      "pe_ratio": 552.01,
+      "book_value": 110.9,
+      "pbv": 8.16
     },
     {
       "symbol": "SALICO",
       "sector": "Non-Life Insurance",
-      "ltp": 609.0
+      "ltp": 609.0,
+      "listed_shares": 26226382.0,
+      "market_cap": 15971866638.0,
+      "float_market_cap": 6388746168.0,
+      "eps": 6.77,
+      "pe_ratio": 89.96,
+      "book_value": 233.64,
+      "pbv": 2.61
     },
     {
       "symbol": "SANIMA",
       "sector": "Commercial Bank",
-      "ltp": 357.0
+      "ltp": 357.0,
+      "listed_shares": 135815256.0,
+      "market_cap": 48486046392.0,
+      "float_market_cap": 23758162575.0,
+      "eps": 22.93,
+      "pe_ratio": 15.57,
+      "book_value": 179.55,
+      "pbv": 1.99
     },
     {
       "symbol": "SARBTM",
       "sector": "Manufacturing & Processing",
-      "ltp": 804.0
+      "ltp": 804.0,
+      "listed_shares": 52242750.0,
+      "market_cap": 42003171000.0,
+      "float_market_cap": 4578345036.0,
+      "eps": 23.12,
+      "pe_ratio": 34.78,
+      "book_value": 195.96,
+      "pbv": 4.1
     },
     {
       "symbol": "SBI",
       "sector": "Commercial Bank",
-      "ltp": 393.9
+      "ltp": 393.9,
+      "listed_shares": 113351244.0,
+      "market_cap": 44649055011.6,
+      "float_market_cap": 13394716424.0,
+      "eps": 17.19,
+      "pe_ratio": 22.91,
+      "book_value": 189.57,
+      "pbv": 2.08
     },
     {
       "symbol": "SBL",
       "sector": "Commercial Bank",
-      "ltp": 390.1
+      "ltp": 390.1,
+      "listed_shares": 147944792.0,
+      "market_cap": 57713263359.2,
+      "float_market_cap": 28279499014.0,
+      "eps": 17.62,
+      "pe_ratio": 22.14,
+      "book_value": 216.73,
+      "pbv": 1.8
     },
     {
       "symbol": "SCB",
       "sector": "Commercial Bank",
-      "ltp": 648.0
+      "ltp": 648.0,
+      "listed_shares": 100423684.0,
+      "market_cap": 65074547232.0,
+      "float_market_cap": 17570127312.0,
+      "eps": 27.64,
+      "pe_ratio": 23.44,
+      "book_value": 218.59,
+      "pbv": 2.96
     },
     {
       "symbol": "SFCL",
       "sector": "Finance",
-      "ltp": 376.0
+      "ltp": 376.0,
+      "listed_shares": 8189114.0,
+      "market_cap": 3079106864.0,
+      "float_market_cap": 1231642520.0,
+      "eps": 0.12,
+      "pe_ratio": 3133.33,
+      "book_value": 60.3,
+      "pbv": 6.24
     },
     {
       "symbol": "SGIC",
       "sector": "Non-Life Insurance",
-      "ltp": 467.9
+      "ltp": 467.9,
+      "listed_shares": 22575000.0,
+      "market_cap": 10562842500.0,
+      "float_market_cap": 5175792825.0,
+      "eps": 3.19,
+      "pe_ratio": 146.68,
+      "book_value": 153.04,
+      "pbv": 3.06
     },
     {
       "symbol": "SHINE",
       "sector": "Development Bank",
-      "ltp": 402.0
+      "ltp": 402.0,
+      "listed_shares": 50219730.0,
+      "market_cap": 20188331460.0,
+      "float_market_cap": 9892282134.0,
+      "eps": 20.93,
+      "pe_ratio": 19.21,
+      "book_value": 153.05,
+      "pbv": 2.63
     },
     {
       "symbol": "SHIVM",
       "sector": "Manufacturing & Processing",
-      "ltp": 627.1
+      "ltp": 627.1,
+      "listed_shares": 55932288.0,
+      "market_cap": 35075137804.8,
+      "float_market_cap": 35075137804.0,
+      "eps": 14.76,
+      "pe_ratio": 42.49,
+      "book_value": 185.31,
+      "pbv": 3.38
     },
     {
       "symbol": "SHL",
       "sector": "Hotel & Tourism",
-      "ltp": 491.2
+      "ltp": 491.2,
+      "listed_shares": 117515254.0,
+      "market_cap": 57723492764.8,
+      "float_market_cap": 17894282393.0,
+      "eps": 6.25,
+      "pe_ratio": 78.59,
+      "book_value": 26.73,
+      "pbv": 18.38
     },
     {
       "symbol": "SICL",
       "sector": "Non-Life Insurance",
-      "ltp": 623.0
+      "ltp": 623.0,
+      "listed_shares": 31015678.0,
+      "market_cap": 19322767394.0,
+      "float_market_cap": 9468155886.0,
+      "eps": 3.03,
+      "pe_ratio": 205.61,
+      "book_value": 189.6,
+      "pbv": 3.29
     },
     {
       "symbol": "SIFC",
       "sector": "Finance",
-      "ltp": 535.0
+      "ltp": 535.0,
+      "listed_shares": 10000000.0,
+      "market_cap": 5350000000.0,
+      "float_market_cap": 2621500000.0,
+      "eps": 3.38,
+      "pe_ratio": 158.28,
+      "book_value": 139.08,
+      "pbv": 3.85
     },
     {
       "symbol": "SINDU",
       "sector": "Development Bank",
-      "ltp": 710.0
+      "ltp": 710.0,
+      "listed_shares": 5574561.0,
+      "market_cap": 3957938310.0,
+      "float_market_cap": 1939389140.0,
+      "eps": -7.91,
+      "pe_ratio": -89.76,
+      "book_value": 91.3,
+      "pbv": 7.78
     },
     {
       "symbol": "SJLIC",
       "sector": "Life Insurance",
-      "ltp": 420.5
+      "ltp": 420.5,
+      "listed_shares": 50119478.0,
+      "market_cap": 21075240499.0,
+      "float_market_cap": 10326867752.0,
+      "eps": 8.79,
+      "pe_ratio": 47.84,
+      "book_value": 125.49,
+      "pbv": 3.35
     },
     {
       "symbol": "SNLI",
       "sector": "Life Insurance",
-      "ltp": 439.0
+      "ltp": 439.0,
+      "listed_shares": 52827936.0,
+      "market_cap": 23191463904.0,
+      "float_market_cap": 6957438820.0,
+      "eps": 8.58,
+      "pe_ratio": 51.17,
+      "book_value": 141.38,
+      "pbv": 3.11
     },
     {
       "symbol": "SONA",
       "sector": "Manufacturing & Processing",
-      "ltp": 423.0
+      "ltp": 423.0,
+      "listed_shares": 30750500.0,
+      "market_cap": 13007461500.0,
+      "float_market_cap": 4552611525.0,
+      "eps": 9.81,
+      "pe_ratio": 43.12,
+      "book_value": 197.22,
+      "pbv": 2.14
     },
     {
       "symbol": "SPIL",
       "sector": "Non-Life Insurance",
-      "ltp": 695.0
+      "ltp": 695.0,
+      "listed_shares": 28065499.0,
+      "market_cap": 19505521805.0,
+      "float_market_cap": 9557705330.0,
+      "eps": 1.91,
+      "pe_ratio": 363.87,
+      "book_value": 250.06,
+      "pbv": 2.78
     },
     {
       "symbol": "SRLI",
       "sector": "Life Insurance",
-      "ltp": 381.1
+      "ltp": 381.1,
+      "listed_shares": 50149240.0,
+      "market_cap": 19111875364.0,
+      "float_market_cap": 9364818699.0,
+      "eps": 9.06,
+      "pe_ratio": 42.06,
+      "book_value": 111.65,
+      "pbv": 3.41
     },
     {
       "symbol": "STC",
       "sector": "Trading",
-      "ltp": 5170.0
+      "ltp": 5170.0,
+      "listed_shares": 3511852.0,
+      "market_cap": 18156274840.0,
+      "float_market_cap": 18156274840.0,
+      "eps": 36.36,
+      "pe_ratio": 142.19,
+      "book_value": 499.99,
+      "pbv": 10.34
     },
     {
       "symbol": "SYPNL",
       "sector": "Manufacturing & Processing",
-      "ltp": 1359.0
+      "ltp": 1359.0,
+      "listed_shares": 13081371.0,
+      "market_cap": 17777583189.0,
+      "float_market_cap": 7111032732.0,
+      "eps": 3.08,
+      "pe_ratio": 441.23,
+      "book_value": 108.94,
+      "pbv": 12.47
     },
     {
       "symbol": "UNL",
       "sector": "Manufacturing & Processing",
-      "ltp": 46600.0
+      "ltp": 46600.0,
+      "listed_shares": 920700.0,
+      "market_cap": 42904620000.0,
+      "float_market_cap": 42904620000.0,
+      "eps": 659.14,
+      "pe_ratio": 70.7,
+      "book_value": 5.0,
+      "pbv": 9.11
     }
-  ]
+  ],
+  "shares_data_included": true
 }
