@@ -6,12 +6,17 @@ on:
     - cron: "0 3 * * 0"   # Sunday 03:00 UTC (~08:45 NPT)
   workflow_dispatch: {}
 
+concurrency:
+  group: update-shares
+  cancel-in-progress: false   # never cancel a long shares run mid-way — let it finish or time out on its own
+
 permissions:
   contents: write
 
 jobs:
   scrape-shares:
     runs-on: ubuntu-latest
+    timeout-minutes: 30   # hard outer limit — the script self-limits to 20 min internally
     steps:
       - uses: actions/checkout@v4
 
@@ -35,4 +40,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add shares.json
           git diff --quiet --cached || git commit -m "Update listed shares $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
