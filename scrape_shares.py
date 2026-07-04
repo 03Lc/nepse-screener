@@ -52,9 +52,15 @@ def parse_holding(text, label):
 def fetch_ownership(page, symbol):
     url = BASE_URL.format(symbol)
     try:
-        page.goto(url, wait_until="networkidle", timeout=30000)
-        # small extra wait in case data loads just after the network settles
-        page.wait_for_timeout(800)
+        # domcontentloaded is fast and reliable; networkidle hangs on sites
+        # with continuous background polling (ads, live-price tickers, etc.)
+        page.goto(url, wait_until="domcontentloaded", timeout=20000)
+        try:
+            # Wait specifically for the content we need rather than the
+            # whole network going quiet — much faster and more reliable.
+            page.wait_for_selector("text=Promoter Holding", timeout=12000)
+        except Exception:
+            pass  # fall through and read whatever did render
         text = page.inner_text("body")
     except Exception as e:
         print(f"  {symbol}: page load failed ({e})", file=sys.stderr)
