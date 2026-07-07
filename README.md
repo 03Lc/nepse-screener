@@ -18,7 +18,7 @@ A live sector-wise stock screener for the Nepal Stock Exchange — find the chea
 |---|---|
 | `scrape_prices.py` | Pulls today's prices from ShareSansar, tags each stock by sector |
 | `scrape_shares.py` | Pulls ownership structure (promoter/public/locked %) and market cap from NepseAlpha, via headless browser |
-| `update-prices.yml` | GitHub Action — runs the price scraper every 15 min |
+| `update-prices.yml` | GitHub Action — runs the price scraper every 5 min |
 | `update-shares.yml` | GitHub Action — runs the ownership scraper weekly |
 | `prices.json` / `shares.json` | Auto-generated data, committed by the Actions above |
 | `nepse-screener.html` | The screener itself — fetches `prices.json` live, no backend needed |
