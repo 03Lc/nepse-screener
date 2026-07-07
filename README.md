@@ -6,7 +6,7 @@ A live sector-wise stock screener for the Nepal Stock Exchange — find the chea
 
 ## Features
 
-- 🔴 **Live prices** — scraped every 15 min during NEPSE trading hours (Sun–Thu, 11:00–15:00 NPT)
+- 🔴 **Live prices** — scraped every 5 min during NEPSE trading hours (Sun–Thu, 11:00–15:00 NPT)
 - 🏦 **Sector-wise breakdown** — Commercial Banks, Hydropower, Microfinance, Insurance, and more
 - 💰 **Sort by lowest price or lowest market cap**
 - 📊 **Click any stock** for listed shares, market cap, and promoter/public ownership split
